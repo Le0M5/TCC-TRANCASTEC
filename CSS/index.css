@@ -39,7 +39,7 @@
     --cor-secundaria: #2c74b4;
     --margin-padrao: 1.6em;
     --radius-botao: 10px;
-    --tamanho-fonte-padrao: 0.8rem;
+    --tamanho-fonte-padrao: 1.2rem;
 }
 
 /* ESTILIZAÇÃO CABEÇALHO */
@@ -59,13 +59,27 @@ header {
 }
 
 .menu a {
+    display: inline-flex;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: var(--margin-padrao);
     text-decoration: none;
     color: var(--cor-secundaria);
 }
 
-#contato {
+.contato {
+    display: flex;
+}
+
+.logo a {
+    display: inline-flex;
+}
+
+header a:hover {
+    transform: scale(1.3);
+    transition: ease .3s;
+}
+
+.contato a {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     border-radius: var(--radius-botao);
     padding: 2.6px;
@@ -76,7 +90,7 @@ header {
 
 /* ESTILIZAÇÃO CORPO */
 
-h2{
+h2 {
     font-family: "Coiny", system-ui;
     font-size: 22px;
     margin: 1.2em;
