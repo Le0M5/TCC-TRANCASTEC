@@ -40,6 +40,7 @@
     --margin-padrao: 1.6em;
     --radius-botao: 10px;
     --tamanho-fonte-padrao: 1.2rem;
+    --tamanho-fonte-padrao: 1.2rem;
 }
 
 /* ESTILIZAÇÃO CABEÇALHO */
@@ -90,7 +91,7 @@ header a:hover {
 
 /* ESTILIZAÇÃO CORPO */
 
-h2 , h3 {
+h2,h3 {
     font-family: "Coiny", system-ui;
     font-size: 22px;
     margin: 1.2em;
