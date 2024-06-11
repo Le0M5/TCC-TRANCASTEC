@@ -13,19 +13,19 @@
 
 <body>
     <div class="container">
-        <div class="cadastroELog">
-            <form action="" class="sign-in-form">
+        <div class="logar-cadastrar">
+            <form action="" class="entrar">
                 <h2 class="title">Entrar</h2>
-                <div class="input-field">
+                <div class="campo-de-entrada">
                     <i class="bi bi-person"></i>
-                    <input type="text" placeholder="Usuário">
+                    <input id="User1" type="text" placeholder="Usuário">
                 </div>
-                <div class="input-field">
+                <div class="campo-de-entrada">
                     <i class="bi bi-lock"></i>
                     <input type="password" placeholder="Senha">
                 </div>
                 <input type="submit" value="Entrar" class="btn">
-                <p class="social-text">Entre com outra plataforma</p>
+                <p class="texto-social">Entre com outra plataforma</p>
                 <div class="social-media">
                     <a href="#" class="social-icon">
                         <i class="bi bi-facebook"></i>
@@ -40,23 +40,24 @@
                         <i class="bi bi-linkedin"></i>
                     </a>
                 </div>
+                <p class="texto-para-conta-no-celular">Não tem uma conta? <a href="#" id="cadastrar-btn2">Cadastre-se</a></p>
             </form>
-            <form action="" class="sign-in-form">
+            <form action="" class="cadastrar">
                 <h2 class="title">Cadastrar</h2>
-                <div class="input-field">
+                <div class="campo-de-entrada">
                     <i class="bi bi-person"></i>
-                    <input type="text" placeholder="Usuário">
+                    <input id="User2" type="text" placeholder="Usuário">
                 </div>
-                <div class="input-field">
+                <div class="campo-de-entrada">
                     <i class="bi bi-envelope"></i>
                     <input type="email" placeholder="E-mail">
                 </div>
-                <div class="input-field">
+                <div class="campo-de-entrada">
                     <i class="bi bi-lock"></i>
                     <input type="password" placeholder="Senha">
                 </div>
                 <input type="submit" value="Cadastrar" class="btn">
-                <p class="social-text">Cadastrar com outra plataforma</p>
+                <p class="texto-social">Cadastrar com outra plataforma</p>
                 <div class="social-media">
                     <a href="#" class="social-icon">
                         <i class="bi bi-facebook"></i>
@@ -71,32 +72,32 @@
                         <i class="bi bi-linkedin"></i>
                     </a>
                 </div>
+                <p class="texto-para-conta-no-celular">Já tem uma conta? <a href="#" id="logar-btn2">Entrar</a></p>
             </form>
         </div>
-        <div class="panels-container">
-            <div class="panel panel-left">
+        <div class="painel-sobre-os-forms">
+            <div class="painel painel-esquerdo">
                 <div class="content">
-                    <h3>Member of Brand?</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque laudantium suscipit consectetur
-                        ipsam ut aperiam ab explicabo, facere voluptate eligendi, eaque quis, recusandae temporibus quae
-                        enim nemo! Tempore, minus ipsa?</p>
-                    <button class="btn" id="logar">Sign in</button>
-                    <img class="imagem" src="../IMG/cadastro-de-clientes-300x157-removebg-preview.png" alt="">
+                    <h3>Já tem conta?</h3>
+                    <p>Entre aqui:</p>
+                    <button class="btn" id="sign-in-btn">Entrar</button>
                 </div>
-                <div class="panel panel-right">
-                    <h3>New of Brand?</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum veritatis nostrum corporis rerum
-                        tempora aliquam officia ut. Temporibus laudantium consequatur provident dolore ex et pariatur a,
-                        alias corrupti vitae inventore.</p>
-                    <button class="btn" id="cadastrar">Sign in</button>
+                <img src="../IMG/360_F_428759715_jsOPITlaytE3QXc2yI1D4U6uwZdVGkRp-removebg-preview.png" alt="" class="imagem">
+            </div>
+            <div class="painel painel-direito">
+                <div class="content">
+                    <h3>Novo aqui?</h3>
+                    <p>Faça seu cadastro logo abaixo:</p>
+                    <button class="btn" id="sign-up-btn">Cadastre-se</button>
                 </div>
-                <img src="../IMG/cadastro-de-clientes-300x157-removebg-preview.png" alt="imagem para cadastrar"
+                <img src="../IMG/cadastro-removebg-preview.png" alt="imagem para cadastrar"
                     class="imagem">
             </div>
+        </div>
     </div>
     </div>
 
-    <script src="../JS/main.js"></script>
+    <script src="../JS/cadastro.js"></script>
 </body>
 
 </html>

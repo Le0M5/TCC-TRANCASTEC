@@ -13,15 +13,3 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
-
-const login = document.querySelector('#logar')
-const cadastro = document.querySelector('#cadastrar')
-const container = document.querySelector('.container')
-
-cadastro.addEventListener('click', () => {
-  container.classList.add('modo-de-cadastro')
-})
-
-login.addEventListener('click', () => {
-  container.classList.remove('modo-de-cadastro')
-})
