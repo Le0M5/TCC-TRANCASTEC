@@ -106,4 +106,36 @@ div p {
     font-family: "Barlow Condensed", sans-serif;
     font-size: var(--tamanho-fonte-padrao);
     margin: 1em 0 2em 3em;
-}  
+}
+
+footer {
+    width: 100%;
+    background-color: #2c74b4;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+footer h4{
+    grid-template-columns: (4, 1fr);
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+footer a {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+footer p{
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+footer i.social-icon{
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+footer i.social-icon:hover{
+    color: #f2f2f2;
+}
