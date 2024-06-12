@@ -118,29 +118,29 @@ footer {
 footer h4{
     font-size: 24px;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 footer a {
     font-size: 24px;
     margin-bottom: 10px;
+    padding: 20px;
 }
 
 footer p{
     font-size: 16px;
     margin-bottom: 10px;
+    text-align: left;
 }
 
-footer a:hover {
+.footer a:hover {
     text-decoration: underline;
 }
 
-footer i.social-icon{
-    display: inline-block;
+.footer i.social-icon{
+    display: flex;
     margin: 0 10px;
     font-size: 20px;
     cursor: pointer;
-}
-
-footer i.social-icon:hover{
-    color: #f2f2f2;
+    height: 10px;
 }
