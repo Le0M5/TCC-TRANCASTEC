@@ -91,7 +91,8 @@ header a:hover {
 
 /* ESTILIZAÇÃO CORPO */
 
-h2,h3 {
+h2,
+h3 {
     font-family: "Coiny", system-ui;
     font-size: 22px;
     margin: 1.2em;
@@ -114,28 +115,27 @@ footer {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 }
-footer h4{
+
+footer h4 {
     grid-template-columns: (4, 1fr);
     font-size: 24px;
     margin-bottom: 10px;
 }
+
 footer a {
     font-size: 24px;
     margin-bottom: 10px;
 }
-footer p{
+
+footer p {
     font-size: 16px;
     margin-bottom: 10px;
 }
+
 footer a:hover {
     text-decoration: underline;
 }
-footer i.social-icon{
-    display: inline-block;
-    margin: 0 10px;
-    font-size: 20px;
-    cursor: pointer;
-}
-footer i.social-icon:hover{
-    color: #f2f2f2;
+
+footer i {
+    color: #fff;
 }
