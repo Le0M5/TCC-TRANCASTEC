@@ -87,6 +87,7 @@ header a:hover {
     color: var(--cor-secundaria);
     border: 1.5px dashed;
     text-decoration: none;
+    margin: 0 .5em;
 }
 
 /* ESTILIZAÇÃO CORPO */
