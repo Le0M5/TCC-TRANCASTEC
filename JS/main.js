@@ -13,3 +13,25 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+
+const cardsData = [
+  { titulo: "Toque colorido", descricao: "Sensores táteis; Teclas com texturas e cores diferentes; Ajuste de volume; Tela digital que exibe partituras;", url: "./IMG/Brinquedo-Piano-Xilofone-Colorido-Unissex-Pimpolho-4.webp" },
+  { titulo: "João", descricao: "Descrição do Card 2", url: "", descricaoIMG: "Toque colorido" },
+  { titulo: "Dudu", descricao: "Descrição do Card 3", url: "", descricaoIMG: "" },
+  { titulo: "Card 4", descricao: "Descrição do Card 4", url: "", descricaoIMG: "" },
+  { titulo: "Card 5", descricao: "Descrição do Card 5", url: "", descricaoIMG: "" },
+  { titulo: "Card 6", descricao: "Descrição do Card 6", url: "", descricaoIMG: "" }
+];
+
+function createCards(data) {
+  const container = document.querySelector('#produtos');
+  container.innerHTML = data.map(item => `
+    <div class="card">
+      <h3>${item.titulo}</h3>
+      <img src=${item.url} alt=${item.descricaoIMG}>
+      <p>${item.descricao}</p>
+    </div>
+  `).join('');
+}
+
+createCards(cardsData);
