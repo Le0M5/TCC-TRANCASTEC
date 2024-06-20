@@ -1,0 +1,92 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(-35deg, #3f3f3f, #f2f2f2, #2c74b4);
+}
+
+/* FORMULÁRIO */
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+.container {
+    background-color: #f2f2f2;
+    width: 50vw;
+    height: 80vh;
+    position: absolute;
+    top: 10%;
+    left: 25%;
+    border-radius: 25px;
+    padding: 0 2em;
+}
+
+.cadastroCep {
+    margin: 6em 0;
+    display: grid;
+    grid-template-areas:
+        "area1 area2"
+        "area3 area3"
+    ;
+}
+
+form {
+    height: 100%;
+    width: 100%;
+}
+
+label {
+    display: block;
+}
+
+input,
+select {
+    width: 90%;
+    height: 2.5em;
+    margin: 1em 0 1em 1em;
+    padding-left: 1em;
+    border: 1px solid #2c74b4;
+}
+
+input {
+    border-radius: 4px;
+}
+
+.separar1 {
+    grid-area: area1;
+}
+
+.separar2 {
+    grid-area: area2;
+}
+
+#Enviar {
+    grid-area: area3;
+    width: 164%;
+    transition: .2s ease-in-out;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #2c74b4;
+    margin-top: 2em;
+}
+
+/* HOVER */
+
+input:focus,
+select:focus {
+    border: .15em solid #2c74b4;
+    outline: 1px double black;
+}
+
+#Enviar:hover {
+    color: white;
+    cursor: pointer;
+    transform: scale(1.05);
+}
