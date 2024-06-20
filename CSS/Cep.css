@@ -7,7 +7,19 @@
 body {
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(-35deg, #3f3f3f, #f2f2f2, #2c74b4);
+    background: linear-gradient(90deg, #638BBF, #49668C, #5681A6,#9BAEBF,#F2F2F2);
+}
+
+:root {
+    --widthLogo: 105px;
+    --heightLogo: 45px;
+    --cor-primaria: #f2f2f2;
+    --cor-secundaria: #2c74b4;
+    --cor-fundo: #3f3f3f;
+    --margin-padrao: 1.6em;
+    --radius-botao: 10px;
+    --tamanho-fonte-padrao: 1.2rem;
+    --tamanho-fonte-padrao: 1.2rem;
 }
 
 /* FORMULÁRIO */
@@ -18,7 +30,7 @@ input::-webkit-outer-spin-button {
 }
 
 .container {
-    background-color: #f2f2f2;
+    background-color: var(--cor-primaria);
     width: 50vw;
     height: 80vh;
     position: absolute;

@@ -11,20 +11,31 @@
   transition: all .2s linear;
 }
 
+:root {
+  --widthLogo: 105px;
+  --heightLogo: 45px;
+  --cor-primaria: #f2f2f2;
+  --cor-secundaria: #2c74b4;
+  --cor-fundo: #3f3f3f;
+  --margin-padrao: 1.6em;
+  --radius-botao: 10px;
+  --tamanho-fonte-padrao: 1.2rem;
+  --tamanho-fonte-padrao: 1.2rem;
+}
+
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 25px;
   min-height: 100vh;
-  background: linear-gradient(90deg, #2ecc71 60%, #27ae60 40.1%);
+  background: linear-gradient(90deg, #638BBF, #49668C, #5681A6,#9BAEBF,#F2F2F2);
 }
 
 .container form {
   padding: 20px;
   width: 700px;
-  background: #fff;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+  background: var(--cor-primaria);
 }
 
 .container form .row {
@@ -38,27 +49,24 @@
 }
 
 .container form .row .col .title {
+  text-align: center;
   font-size: 20px;
   color: #333;
-  padding-bottom: 5px;
   text-transform: uppercase;
 }
 
-.container form .row .col .inputBox {
-  margin: 15px 0;
-}
-
 .container form .row .col .inputBox span {
-  margin-bottom: 10px;
+  margin: .8em 0;
   display: block;
 }
 
 .container form .row .col .inputBox input {
   width: 100%;
   border: 1px solid #ccc;
-  padding: 10px 15px;
+  height: 3.3em;
   font-size: 15px;
   text-transform: none;
+  margin-bottom: 1em;
 }
 
 .container form .row .col .inputBox input:focus {
@@ -68,10 +76,6 @@
 .container form .row .col .flex {
   display: flex;
   gap: 15px;
-}
-
-.container form .row .col .flex .inputBox {
-  margin-top: 5px;
 }
 
 .container form .row .col .inputBox img {
@@ -96,12 +100,41 @@
 
 .inputQueESelect {
   width: 100%;
-  height: 3.3em;
+  height: 3.75em;
   border: 1px solid #ccc;
 }
 
 optgroup {
   font-family: 'Poppins', sans-serif;
-  font-size: 1.3em;
-  text-align: auto;
+  font-size: 14px;
+}
+
+#nomeNoCartao {
+  text-transform: uppercase;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+input , select {
+  padding-left: 1em;
+}
+
+img.imgEsquerda {
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  margin-left: 7em;
+  margin-top: .563em;
+}
+
+#CVV {
+  margin-top: 1.7em;
+}
+
+#AnoExp {
+  margin-top: 1.65em;
+  width: 10em;
 }

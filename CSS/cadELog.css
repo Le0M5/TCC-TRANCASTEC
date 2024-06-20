@@ -29,7 +29,19 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #3f3f3f;
+    background-color: var(--cor-fundo);
+}
+
+:root {
+    --widthLogo: 105px;
+    --heightLogo: 45px;
+    --cor-primaria: #f2f2f2;
+    --cor-secundaria: #2c74b4;
+    --cor-fundo: #3f3f3f;
+    --margin-padrao: 1.6em;
+    --radius-botao: 10px;
+    --tamanho-fonte-padrao: 1.2rem;
+    --tamanho-fonte-padrao: 1.2rem;
 }
 
 /* FORMULÁRIO */
@@ -71,16 +83,16 @@ form.cadastrar {
 .title {
     font-size: 40px;
     font-family: "Roboto", sans-serif;
-    color: #2c74b4;
+    color: var(--cor-secundaria);
     margin-bottom: 10px;
 }
 
 .campo-de-entrada {
     width: 100%;
     height: 50px;
-    background: #f2f2f2;
+    background: var(--cor-primaria);
     margin: 10px 0;
-    border: 1px solid #2c74b4;
+    border: 1px solid var(--cor-secundaria);
     border-radius: 50px;
     display: flex;
     align-items: center;
@@ -111,7 +123,7 @@ form.cadastrar {
     border: none;
     border-radius: 50px;
     background-color: #00325f;
-    color: white;
+    color: var(--cor-primaria);
     font-weight: 600;
     margin: 1em 0;
     text-transform: uppercase;
@@ -119,7 +131,7 @@ form.cadastrar {
 }
 
 .btn:hover {
-    background-color: #2c74b4;
+    background-color: var(--cor-secundaria);
     transform: scale(1.1);
     transition: linear .3s;
 }
@@ -140,8 +152,8 @@ form.cadastrar {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #3f3f3f;
-    border: 1px solid #3f3f3f;
+    color: var(--cor-fundo);
+    border: 1px solid var(--cor-fundo);
     border-radius: 50px;
     margin: 0 5px;
 }
