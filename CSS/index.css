@@ -90,8 +90,7 @@ header a {
 
 /* ESTILIZAÇÃO CORPO */
 
-h2,
-h3 {
+h2,h3 {
     font-family: Verdana, Tahoma;
     font-size: 22px;
     margin: 1.2em;
@@ -109,10 +108,11 @@ div p {
 }
 
 footer {
-    width: 100%;
+    align-items: center;
+    justify-content: space-between;
     background-color: #2c74b4;
     display: flex;
-    grid-template-columns: repeat(4, 1fr);
+    padding: 20px;
 }
 
 div.somos figure .img {
@@ -128,7 +128,6 @@ div.somos figure .img {
 div.somos figure .img img {
     width: 380px;
     height: 380px;
-    border: 2px solid black;
     border-radius: 15px;
 }
 
@@ -323,8 +322,6 @@ div.carrinho-item {
     transform: scale(1.08);
 }
 
-
-
 .carrinho .carrinho-item .btn-eliminar i {
     pointer-events: none;
 }
@@ -398,28 +395,38 @@ footer h4 {
     font-size: 24px;
     margin-bottom: 10px;
     text-align: center;
+    color: #f2f2f2;
+    align-items: flex-start;
 }
 
 footer a {
     font-size: 24px;
-    margin-bottom: 10px;
-    padding: 20px;
+    text-decoration: none;
+    display: flex;
+    color: #f2f2f2;
+    text-align: left;
 }
 
 footer p {
     font-size: 16px;
     margin-bottom: 10px;
     text-align: left;
+    color: #f2f2f2;
 }
 
-.footer a:hover {
+footer a:hover {
     text-decoration: underline;
 }
 
-.footer i.social-icon {
-    display: flex;
-    margin: 0 10px;
+footer i.social-icon{
     font-size: 20px;
     cursor: pointer;
-    height: 10px;
+    height: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagemfooter{
+    height: 55px;
+    width: 55px;
 }
