@@ -194,15 +194,11 @@ function eliminarItemCarrinho(event) {
   buttonClicked.parentElement.parentElement.remove();
   //Actualizamos el total del Carrinho
   atualizarTotalCarrinho();
-
-  //la siguiente funciòn controla si hay elementos en el Carrinho
-  //Si no hay elimino el Carrinho
-  ocultarCarrinho();
 }
 //Funciòn que controla si hay elementos en el Carrinho. Si no hay oculto el Carrinho.
 function ocultarCarrinho() {
   let carrinhoItems = document.getElementsByClassName('carrinho-items')[0];
-  if (carrinhoItems.childElementCount == 0) {
+  if (carrinhoItems.childElementCount == 0 || carrinhoItems.childElementCount != 0) {
     let carrinho = document.getElementsByClassName('carrinho')[0];
     carrinho.style.marginRight = '-100%';
     carrinho.style.opacity = '0';
