@@ -86,7 +86,7 @@ function pagarClicked() {
   if (preco == 'R$0') {
     alert(`Não há o que pagar`);
   } else if (preco != '0') {
-    window.location.href = '../HTML/Cartao.html'
+    window.location.href = './HTML/Cartao.html'
   }
   //Elimino todos los elmentos del carrinho
   let carrinhoItems = document.getElementsByClassName('carrinho-items')[0];
