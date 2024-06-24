@@ -82,14 +82,18 @@ function ready() {
 }
 //Eliminamos todos los elementos del carrinho y lo ocultamos
 function pagarClicked() {
-  alert(`Compra realizada com sucesso!`);
+  let preco = document.getElementsByClassName('carrinho-precio-total')[0].innerText
+  if (preco == 'R$0') {
+    alert(`Não há o que pagar`);
+  } else if (preco != '0') {
+    window.location.href = '../HTML/Cartao.html'
+  }
   //Elimino todos los elmentos del carrinho
   let carrinhoItems = document.getElementsByClassName('carrinho-items')[0];
   while (carrinhoItems.hasChildNodes()) {
     carrinhoItems.removeChild(carrinhoItems.firstChild)
   }
   atualizarTotalCarrinho();
-  ocultarCarrinho();
 }
 //Funciòn que controla el boton clickeado de agregar al carrinho
 function agregarAlCarrinhoClicked(event) {
