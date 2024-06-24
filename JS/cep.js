@@ -37,7 +37,7 @@ const pesquisarCep = async () => {
     } else {
         document.getElementById('Endereço').value = 'CEP incorreto!';
     }
-
+    
 }
 
 document.getElementById('CEP')

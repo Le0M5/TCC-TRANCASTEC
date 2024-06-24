@@ -16,11 +16,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
 const cardsData = [
   { titulo: "Toque colorido", descricao: "Sensores táteis; Teclas com texturas e cores diferentes; Ajuste de volume; Tela digital que exibe partituras;", url: "./IMG/Brinquedo-Piano-Xilofone-Colorido-Unissex-Pimpolho-4.webp", preco: 3000, descricaoIMG: "Piano colorido" },
-  { titulo: "Toque", descricao: "Sensores táteis; Teclas com texturas e cores diferentes; Ajuste de volume; Tela digital que exibe partituras;", url: "./IMG/Brinquedo-Piano-Xilofone-Colorido-Unissex-Pimpolho-4.webp", preco: 3000, descricaoIMG: "Piano colorido" },
-  { titulo: "Toque co", descricao: "Sensores táteis; Teclas com texturas e cores diferentes; Ajuste de volume; Tela digital que exibe partituras;", url: "./IMG/Brinquedo-Piano-Xilofone-Colorido-Unissex-Pimpolho-4.webp", preco: 3000, descricaoIMG: "Piano colorido" },
-  { titulo: "Toque lo", descricao: "Sensores táteis; Teclas com texturas e cores diferentes; Ajuste de volume; Tela digital que exibe partituras;", url: "./IMG/Brinquedo-Piano-Xilofone-Colorido-Unissex-Pimpolho-4.webp", preco: 3000, descricaoIMG: "Piano colorido" },
-  { titulo: "Toque ri", descricao: "Sensores táteis; Teclas com texturas e cores diferentes; Ajuste de volume; Tela digital que exibe partituras;", url: "./IMG/Brinquedo-Piano-Xilofone-Colorido-Unissex-Pimpolho-4.webp", preco: 3000, descricaoIMG: "Piano colorido" },
-  { titulo: "Toque do", descricao: "Sensores táteis; Teclas com texturas e cores diferentes; Ajuste de volume; Tela digital que exibe partituras;", url: "./IMG/Brinquedo-Piano-Xilofone-Colorido-Unissex-Pimpolho-4.webp", preco: 3000, descricaoIMG: "Piano colorido" },
+  { titulo: "Toque", descricao: "Sensores táteis; Teclas com texturas e cores diferentes; Ajuste de volume; Tela digital que exibe partituras;", url: "./IMG/Brinquedo-Piano-Xilofone-Colorido-Unissex-Pimpolho-4.webp", preco: 2000, descricaoIMG: "Piano colorido" },
+  { titulo: "Toque co", descricao: "Sensores táteis; Teclas com texturas e cores diferentes; Ajuste de volume; Tela digital que exibe partituras;", url: "./IMG/Brinquedo-Piano-Xilofone-Colorido-Unissex-Pimpolho-4.webp", preco: 200, descricaoIMG: "Piano colorido" },
+  { titulo: "Toque lo", descricao: "Sensores táteis; Teclas com texturas e cores diferentes; Ajuste de volume; Tela digital que exibe partituras;", url: "./IMG/Brinquedo-Piano-Xilofone-Colorido-Unissex-Pimpolho-4.webp", preco: 300, descricaoIMG: "Piano colorido" },
+  { titulo: "Toque ri", descricao: "Sensores táteis; Teclas com texturas e cores diferentes; Ajuste de volume; Tela digital que exibe partituras;", url: "./IMG/Brinquedo-Piano-Xilofone-Colorido-Unissex-Pimpolho-4.webp", preco: 500, descricaoIMG: "Piano colorido" },
+  { titulo: "Toque do", descricao: "Sensores táteis; Teclas com texturas e cores diferentes; Ajuste de volume; Tela digital que exibe partituras;", url: "./IMG/Brinquedo-Piano-Xilofone-Colorido-Unissex-Pimpolho-4.webp", preco: 30, descricaoIMG: "Piano colorido" },
 ];
 
 function createCards(data) {
@@ -102,11 +102,11 @@ function agregarAlCarrinhoClicked(event) {
 
   agregarItemAlCarrinho(titulo, precio, imagenSrc);
 
-  hacerVisibleCarrinho();
+  DeixarCarrinhoVisivel();
 }
 
 //Funcion que hace visible el carrinho
-function hacerVisibleCarrinho() {
+function DeixarCarrinhoVisivel() {
   carrinhoVisible = true;
   let carrinho = document.getElementsByClassName('carrinho')[0];
   carrinho.style.marginRight = '0';
@@ -249,3 +249,30 @@ function atualizarTotalCarrinho() {
   total = Math.round(total * 100) / 100;
   document.getElementsByClassName('carrinho-precio-total')[0].innerText = 'R$' + total.toLocaleString("pt-br");
 }
+
+
+function abrirEFecharCarrinho() {
+  if (carrinhoVisible != true) {
+    DeixarCarrinhoVisivel()
+  } else {
+    ocultarCarrinho()
+  }
+}
+
+const iconeCarrinho = document.querySelector("#cartIcone")
+
+iconeCarrinho.addEventListener('click', abrirEFecharCarrinho)
+
+// Seleciona todos os links no menu
+const linksMenu = document.querySelectorAll('.menu a');
+
+// Adiciona um evento de clique a cada link
+linksMenu.forEach(link => {
+  link.addEventListener('click', function () {
+    // Remove a classe 'active' de todos os links
+    linksMenu.forEach(link => link.classList.remove('active'));
+
+    // Adiciona a classe 'active' ao link clicado
+    this.classList.add('active');
+  });
+});

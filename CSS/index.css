@@ -20,12 +20,15 @@
 
 /* ESTILIZAÇÃO CABEÇALHO */
 
-header {
+.cabecalho {
+    z-index: 1;
+    top: 0;
     display: flex;
+    position: fixed;
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    height: 4.5rem;
+    height: 4.5em;
     background-color: var(--cor-primaria);
 }
 
@@ -35,12 +38,21 @@ header {
 }
 
 .menu a {
-    display: inline-flex;
+    display: inline-block;
     font-family: Verdana, Geneva, Tahoma;
     font-size: 1em;
     margin: var(--margin-padrao);
     text-decoration: none;
     color: var(--cor-secundaria);
+}
+
+.menu a.active {
+    border-bottom: 2px solid var(--cor-secundaria);
+    /* Adiciona uma borda na parte inferior */
+}
+
+.menu a::after:focus {
+    width: 100%;
 }
 
 .login {
@@ -63,10 +75,17 @@ header a {
     font-family: Verdana, Geneva, Tahoma;
     font-size: 1em;
     border-radius: var(--radius-botao);
-    padding: .3em;
+    padding: .1em .5em;
     color: var(--cor-secundaria);
     border: 1.6px double;
     text-decoration: none;
+    margin-right: 2em;
+    display: flex;
+    align-items: center;
+}
+
+#cartIcone {
+    font-size: 25px;
 }
 
 /* ESTILIZAÇÃO CORPO */
