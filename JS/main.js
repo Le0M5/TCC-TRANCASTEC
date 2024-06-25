@@ -21,6 +21,9 @@ const cardsData = [
   { titulo: "Toque lo", descricao: "Sensores táteis; Teclas com texturas e cores diferentes; Ajuste de volume; Tela digital que exibe partituras;", url: "./IMG/Brinquedo-Piano-Xilofone-Colorido-Unissex-Pimpolho-4.webp", preco: 300, descricaoIMG: "Piano colorido" },
   { titulo: "Toque ri", descricao: "Sensores táteis; Teclas com texturas e cores diferentes; Ajuste de volume; Tela digital que exibe partituras;", url: "./IMG/Brinquedo-Piano-Xilofone-Colorido-Unissex-Pimpolho-4.webp", preco: 500, descricaoIMG: "Piano colorido" },
   { titulo: "Toque do", descricao: "Sensores táteis; Teclas com texturas e cores diferentes; Ajuste de volume; Tela digital que exibe partituras;", url: "./IMG/Brinquedo-Piano-Xilofone-Colorido-Unissex-Pimpolho-4.webp", preco: 30, descricaoIMG: "Piano colorido" },
+  { titulo: "Toqueo", descricao: "Sensores táteis; Teclas com texturas e cores diferentes; Ajuste de volume; Tela digital que exibe partituras;", url: "./IMG/Brinquedo-Piano-Xilofone-Colorido-Unissex-Pimpolho-4.webp", preco: 30, descricaoIMG: "Piano colorido" },
+  { titulo: "Toque o", descricao: "Sensores táteis; Teclas com texturas e cores diferentes; Ajuste de volume; Tela digital que exibe partituras;", url: "./IMG/Brinquedo-Piano-Xilofone-Colorido-Unissex-Pimpolho-4.webp", preco: 30, descricaoIMG: "Piano colorido" },
+  { titulo: "Toqu", descricao: "Sensores táteis; Teclas com texturas e cores diferentes; Ajuste de volume; Tela digital que exibe partituras;", url: "./IMG/Brinquedo-Piano-Xilofone-Colorido-Unissex-Pimpolho-4.webp", preco: 30, descricaoIMG: "Piano colorido" },
 ];
 
 function createCards(data) {
@@ -259,7 +262,7 @@ function abrirEFecharCarrinho() {
   }
 }
 
-const iconeCarrinho = document.querySelector("#cartIcone")
+const iconeCarrinho = document.querySelector("#abrirEFechar")
 
 iconeCarrinho.addEventListener('click', abrirEFecharCarrinho)
 
