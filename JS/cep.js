@@ -41,4 +41,4 @@ const pesquisarCep = async () => {
 }
 
 document.getElementById('CEP')
-    .addEventListener('focusout', pesquisarCep);
+    .addEventListener('keyup', pesquisarCep);
