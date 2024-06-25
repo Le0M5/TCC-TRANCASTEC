@@ -82,7 +82,7 @@ input::-webkit-outer-spin-button {
 
 .parte1,
 .parte2 {
-    width: 448px;
+    width: 440px;
     display: flex;
     flex-direction: column;
 }
@@ -137,10 +137,12 @@ select:focus {
 }
 
 #Enviar:hover {
-    color: black;
     cursor: pointer;
-    transform: scale(1.05);
+    background-color: var(--cor-secundaria);
+    transform: scale(1.1);
+    transition: linear .3s;
     box-shadow: 5px 5px 15px var(--cor-secundaria);
+    color: black;
 }
 
 /* RESPONSIVIDADE */
