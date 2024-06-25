@@ -131,10 +131,27 @@ div.somos figure .img {
     padding: 3em 10%;
 }
 
+.hist{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 20px;
+    align-items: center;
+    text-align: justify;
+}
+
+.img2{
+    width: 450px;
+    height: 450px;
+    align-items: center;
+    border-radius: 500%;
+}
+
 div.somos figure .img img {
     width: 380px;
     height: 380px;
     border-radius: 15px;
+    
 }
 
 /* CARRINHO DE COMPRAS E OUTRO*/
