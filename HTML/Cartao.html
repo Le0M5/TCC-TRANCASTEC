@@ -13,7 +13,7 @@
 
     <div class="container">
 
-        <form action="">
+        <form action="" id="cartao-form">
 
             <div class="row">
 
@@ -21,21 +21,20 @@
 
                     <h3 id="soEsse" class="title">Informações Pessoais</h3>
 
-                    <img class="imgEsquerda" src="../IMG/png-transparent-interior-design-services-art-business-ikea-evry-architecture-others-angle-text-service-thumbnail-removebg-preview.png"
-                    alt="">
+                    <img class="imgEsquerda" src="../IMG/cadastro.png" alt="">
 
                     <div class="inputBox">
                         <span>Nome completo :</span>
-                        <input id="card-number" type="text" placeholder="Nome Sobrenome">
+                        <input minlength="4" required id="name" type="text" placeholder="Nome Sobrenome">
                     </div>
                     <div class="inputBox">
                         <span>Email :</span>
-                        <input type="email" placeholder="exemplo@exemplo.com">
+                        <input required type="email" id="email" placeholder="exemplo@exemplo.com">
                     </div>
 
                     <div class="inputBox">
                         <span>Nome no cartão :</span>
-                        <input id="nomeNoCartao" type="text" placeholder="NOME SOBRENOME">
+                        <input minlength="4" required id="nomeNoCartao" type="text" placeholder="NOME SOBRENOME">
                     </div>
                 </div>
 
@@ -50,26 +49,25 @@
 
                     <div class="inputBox">
                         <span>Número do cartão :</span>
-                        <input id="numero" maxlength="19" type="text" placeholder="0000-0000-0000-0000">
+                        <input required id="numero" minlength="19" maxlength="19" type="text"
+                            placeholder="0000-0000-0000-0000">
                     </div>
                     <div class="inputBox">
                         <span>Mês de expiração :</span>
-                        <select class="inputQueESelect " name="mes" required>
-                            <optgroup>
-                                <option disabled hidden selected value="">Mês de expiração</option>
-                                <option value="Janeiro">01</option>
-                                <option value="Fevereiro">02</option>
-                                <option value="Marco">03</option>
-                                <option value="Abril">04</option>
-                                <option value="Maio">05</option>
-                                <option value="Junho">06</option>
-                                <option value="Julho">07</option>
-                                <option value="Agosto">08</option>
-                                <option value="Setembro">09</option>
-                                <option value="Outubro">10</option>
-                                <option value="Novembro">11</option>
-                                <option value="Dezembro">12</option>
-                            </optgroup>
+                        <select class="inputQueESelect" name="mes" required>
+                            <option disabled hidden selected value="">Mês de expiração</option>
+                            <option value="01">Janeiro</option>
+                            <option value="02">Fevereiro</option>
+                            <option value="03">Março</option>
+                            <option value="04">Abril</option>
+                            <option value="05">Maio</option>
+                            <option value="06">Junho</option>
+                            <option value="07">Julho</option>
+                            <option value="08">Agosto</option>
+                            <option value="09">Setembro</option>
+                            <option value="10">Outubro</option>
+                            <option value="11">Novembro</option>
+                            <option value="12">Dezembro</option>
                         </select>
                     </div>
 
@@ -77,41 +75,39 @@
                         <div class="inputBox">
                             <span id="AnoExp">Ano de expiração :</span>
                             <select required class="inputQueESelect style" name="ano">
-                                <optgroup>
-                                    <option hidden disabled selected value=""></option>
-                                    <option value="2024">2024</option>
-                                    <option value="2025">2025</option>
-                                    <option value="2026">2026</option>
-                                    <option value="2027">2027</option>
-                                    <option value="2028">2028</option>
-                                    <option value="2029">2029</option>
-                                    <option value="2030">2030</option>
-                                    <option value="2031">2031</option>
-                                    <option value="2032">2032</option>
-                                    <option value="2033">2033</option>
-                                    <option value="2034">2034</option>
-                                    <option value="2035">2035</option>
-                                    <option value="2036">2036</option>
-                                    <option value="2037">2037</option>
-                                    <option value="2038">2038</option>
-                                    <option value="2039">2039</option>
-                                    <option value="2040">2040</option>
-                                    <option value="2041">2041</option>
-                                    <option value="2042">2042</option>
-                                    <option value="2043">2043</option>
-                                    <option value="2044">2044</option>
-                                    <option value="2045">2045</option>
-                                    <option value="2046">2046</option>
-                                    <option value="2047">2047</option>
-                                    <option value="2048">2048</option>
-                                    <option value="2049">2049</option>
-                                    <option value="2050">2050</option>
-                                </optgroup>
+                                <option hidden disabled selected value="">Selecione o ano</option>
+                                <option value="2024">2024</option>
+                                <option value="2025">2025</option>
+                                <option value="2026">2026</option>
+                                <option value="2027">2027</option>
+                                <option value="2028">2028</option>
+                                <option value="2029">2029</option>
+                                <option value="2030">2030</option>
+                                <option value="2031">2031</option>
+                                <option value="2032">2032</option>
+                                <option value="2033">2033</option>
+                                <option value="2034">2034</option>
+                                <option value="2035">2035</option>
+                                <option value="2036">2036</option>
+                                <option value="2037">2037</option>
+                                <option value="2038">2038</option>
+                                <option value="2039">2039</option>
+                                <option value="2040">2040</option>
+                                <option value="2041">2041</option>
+                                <option value="2042">2042</option>
+                                <option value="2043">2043</option>
+                                <option value="2044">2044</option>
+                                <option value="2045">2045</option>
+                                <option value="2046">2046</option>
+                                <option value="2047">2047</option>
+                                <option value="2048">2048</option>
+                                <option value="2049">2049</option>
+                                <option value="2050">2050</option>
                             </select>
                         </div>
                         <div class="inputBox">
                             <span id="CVV">CVV :</span>
-                            <input maxlength="3" type="text" placeholder="1234">
+                            <input required minlength="3" maxlength="3" type="text" placeholder="1234">
                         </div>
                     </div>
 
