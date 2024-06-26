@@ -1,13 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
-  const form = document.querySelector('#cadastroForm');
+  const form = document.querySelector('#loginForm');
   const usernameInput = document.querySelector('#username');
   const passwordInput = document.querySelector('#password');
   const email = document.querySelector('#email')
-
-  if (!form || !usernameInput || !passwordInput) {
-      console.error('Elementos do formulário não foram encontrados.');
-      return;
-  }
 
   form.addEventListener('submit', function(event) {
       event.preventDefault(); // Evita o envio padrão do formulário
@@ -26,7 +21,9 @@ document.addEventListener('DOMContentLoaded', function() {
           return;
       }
       // Validar email
-      if (!emailRegex.test(email))
+      if (!emailRegex.test(email)) {
+        alert('Email deve ser válido')
+      }
       // Validar a senha
       if (!senhaRegex.test(password)) {
           alert('Senha deve ter pelo menos 6 caracteres.');
