@@ -90,8 +90,8 @@ header a {
 
 /* ESTILIZAÇÃO CORPO */
 
-h2 {
-    margin-top: 5em;
+#Sobre {
+    margin-top: 3em;
 }
 
 h2,
@@ -137,8 +137,6 @@ footer {
 }
 
 .somos2 {
-    width: 85%;
-    border: 1px solid;
     border-radius: 15px;
     padding: 1em;
 }
@@ -165,18 +163,36 @@ footer {
     color: var(--cor-secundaria);
 }
 
-.img {
+.imagem {
+    border-radius: 15px;
+    width: 100%;
+}
+
+figure.img {
     border: 1px solid;
+    height: 800px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    width: 870px;
+}
+
+
+div.somos figure img {
+    width: 240px;
+    height: 240px;
     border-radius: 15px;
 }
 
-div.somos .img {
+div.somos .imagem {
     display: flex;
     gap: 20px;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    width: 80%;
+    width: 53%;
     padding: 3em 10%;
 }
 
@@ -210,12 +226,6 @@ div.somos .img {
     border-radius: 50%;
 }
 
-div.somos figure img {
-    width: 300px;
-    height: 300px;
-    border-radius: 15px;
-}
-
 /* CARRINHO DE COMPRAS E OUTRO*/
 .title {
     display: block;
@@ -239,6 +249,7 @@ div.somos figure img {
     gap: 0 3em;
     width: 100%;
     transition: .3s;
+    max-width: 1400px;
     height: 1290px;
     margin-right: 2em;
     max-height: 1400px;
@@ -246,7 +257,7 @@ div.somos figure img {
 }
 
 .container .container-items .item {
-    max-width: 250px;
+    max-width: 300px;
     margin: auto;
     border: 1.3px solid var(--cor-secundaria);
     border-radius: 10px;

@@ -32,15 +32,15 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 document.addEventListener('DOMContentLoaded', function () {
-    var form = document.getElementById('cartao-form');
+    let form = document.getElementById('cartao-form');
 
     form.addEventListener('submit', function (event) {
         event.preventDefault();
 
-        var emailInput = document.getElementById('email');
-        var email = emailInput.value.trim();
+        let emailInput = document.getElementById('email');
+        let email = emailInput.value.trim();
 
-        var regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        let regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
         if (!regex.test(email)) {
             alert('Por favor, insira um endereço de e-mail válido.');
@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         // Validação de comprimento mínimo para Nome no cartão
-        var nomeNoCartaoInput = document.getElementById('nomeNoCartao');
+        let nomeNoCartaoInput = document.getElementById('nomeNoCartao');
         if (nomeNoCartaoInput.value.length < 4) {
             alert('O nome no cartão deve ter no mínimo 4 caracteres.');
             nomeNoCartaoInput.focus();
@@ -57,8 +57,8 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         // Validação de comprimento mínimo para Número do cartão
-        var numeroCartaoInput = document.getElementById('numero');
-        if (numeroCartaoInput.value.replace(/\D/g, '').length < 19) {
+        let numeroCartaoInput = document.getElementById('numero');
+        if (numeroCartaoInput.value.length < 19) {
             alert('O número do cartão deve ter exatamente 19 caracteres.');
             numeroCartaoInput.focus();
             return false;
