@@ -3,25 +3,68 @@ function validateNumberInput(event) {
     input.value = input.value.replace(/[^0-9]/g, '');
 }
 
-// Removendo a chamada duplicada para validateNumberInput
 document.getElementById('numero').addEventListener('input', validateNumberInput);
 
 document.addEventListener('DOMContentLoaded', function () {
-    // Obtém o elemento de entrada do número do cartão
-    var cardNumberInput = document.getElementById('numero');    
+    let cardNumberInput = document.getElementById('numero');
 
-    // Adiciona um ouvinte de evento ao elemento de entrada
     cardNumberInput.addEventListener('input', function (event) {
-        // Remove todos os caracteres não numéricos primeiro
-        var cleanedValue = event.target.value.replace(/\D/g, '');
+        let cleanedValue = event.target.value.replace(/\D/g, '');
 
-        // Verifica se o comprimento do valor limpo é maior ou igual a 12
-        if (cleanedValue.length > 4) { // Garante que temos pelo menos 4 dígitos limpos
-            // Formata o valor para incluir barras, mas evitando adicionar uma após o último número
-            var formattedValue = cleanedValue.replace(/(\d{4})(?=\d)/g, '$1-');
-
-            // Atualiza o valor do campo de entrada com o valor formatado
+        if (cleanedValue.length > 4) {
+            let formattedValue = cleanedValue.replace(/(\d{4})(?=\d)/g, '$1-');
             event.target.value = formattedValue;
         }
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    function cleanNameInput(event) {
+        const input = event.target;
+        input.value = input.value.replace(/[0-9]/g, '');
+    }
+
+    let NameInput = document.querySelector('#name');
+    let cardNameInput = document.querySelector('#nomeNoCartao')
+
+    cardNameInput.addEventListener('input', cleanNameInput);
+    NameInput.addEventListener('input', cleanNameInput);
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    let form = document.getElementById('cartao-form');
+
+    form.addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        let emailInput = document.getElementById('email');
+        let email = emailInput.value.trim();
+
+        let regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+        if (!regex.test(email)) {
+            alert('Por favor, insira um endereço de e-mail válido.');
+            emailInput.focus();
+            return false;
+        }
+
+        // Validação de comprimento mínimo para Nome no cartão
+        let nomeNoCartaoInput = document.getElementById('nomeNoCartao');
+        if (nomeNoCartaoInput.value.length < 4) {
+            alert('O nome no cartão deve ter no mínimo 4 caracteres.');
+            nomeNoCartaoInput.focus();
+            return false;
+        }
+
+        // Validação de comprimento mínimo para Número do cartão
+        let numeroCartaoInput = document.getElementById('numero');
+        if (numeroCartaoInput.value.length < 19) {
+            alert('O número do cartão deve ter exatamente 19 caracteres.');
+            numeroCartaoInput.focus();
+            return false;
+        }
+
+        // Se a validação passar, redirecione para outra página
+        window.location.href = '../index.html';
     });
 });
