@@ -99,12 +99,33 @@ header a {
     text-align: justify;
 }
 
+.texto h2 {
+    font-size: 2em;
+    color: transparent;
+    background: linear-gradient(45deg, #3724E0, #244DE0, #24C4E0, #7524E0);
+    background-size: 400% 100%;
+    animation: animado 5s linear infinite alternate;
+    -webkit-background-clip: text;
+    font-weight: bold;
+}
+
+@keyframes animado {
+    0% {
+        background-position-x: 0%;
+    }
+
+    100% {
+        background-position-x: 400%;
+    }
+}
+
 .texto {
     width: 700px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: white;
 }
 
 .carousel {
@@ -124,7 +145,7 @@ header a {
 }
 
 .carousel button {
-    left: 90%;
+    left: 81%;
     width: 200px;
     z-index: 0;
 }
@@ -135,16 +156,16 @@ button.carousel-control-prev {
 }
 
 .carousel img {
-    height: 778px;
+    height: 700px;
     padding: auto;
 }
 
 .carousel-item {
-    transition: .5s ease-in-out;
+    transition: .6s ease-in-out;
 }
 
 #carouselExampleAutoplaying {
-    transition: .5s ease;
+    transition: .3s ease-in-out;
 }
 
 .preto {
@@ -300,10 +321,11 @@ div.somos .imagem {
 
 /* BOTAO DO 1° CARROSSEL */
 
-#VerMais {
+#VerMais,
+.texto2 a {
     border-radius: 15px;
-    width: 200px;
-    height: 3em;
+    width: 300px;
+    height: 4.8em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -311,29 +333,110 @@ div.somos .imagem {
     margin-top: 4em;
     background-color: var(--cor-secundaria);
     color: var(--cor-primaria);
-    transition: .3s ease-in-out;
+    transition: .4s ease-in-out;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
-#VerMais:hover {
+#VerMais:hover,
+.texto2 a:hover {
     transform: scale(1.2);
+}
+
+/* DIV ALGUMA COISA */
+
+.algumaCoisa {
+    height: 120vh;
+    border: 1px solid #000;
 }
 
 /* DIV CARROSSEL2 E PARTE DO PRODUTO */
 
-
-/* CARRINHO DE COMPRAS E OUTRO*/
-.title {
-    display: block;
+#produto {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    height: 110vh;
 }
 
-.container {
-    max-width: 1200px;
-    padding: 10px;
-    margin: 0 auto;
+.texto2 p {
+    margin: 0;
+}
+
+.texto2 {
+    width: 800px;
+    text-align: center;
+    margin: 2em;
     display: flex;
-    justify-content: space-between;
-    /* Oculto o que está fora da .container */
-    contain: paint;
+    flex-direction: column;
+    align-items: center;
+}
+
+.texto2 a {
+    width: 200px;
+}
+
+.texto2 a p,
+#VerMais p {
+    font-size: 1.6em;
+}
+
+.texto2 h2 {
+    margin-top: 2em;
+}
+
+.container-slider {
+    display: flex;
+    width: 800px;
+    min-height: 50vh;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+.container-images {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 700px;
+}
+
+.container-images img {
+    transition: .8s ease-in-out;
+    height: 650px;
+}
+
+.slider {
+    opacity: 0;
+    transition: opacity .2s;
+    position: absolute;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.on {
+    opacity: 1;
+}
+
+#prev-button,
+#next-button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#prev-button img,
+#next-button img {
+    width: 100%;
+    height: 100%;
+}
+
+#prev-button {
+    transform: rotate(180deg);
 }
 
 /* SECTION RESPONSIVE */
