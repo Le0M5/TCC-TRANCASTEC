@@ -138,24 +138,16 @@ button.carousel-control-prev {
     padding: auto;
 }
 
-.carousel-item {
-    transition: .5s ease-in-out;
-}
-
-#carouselExampleAutoplaying {
-    transition: .5s ease;
-}
-
 .preto {
-    background-color: rgb(81, 81, 81);
+    background-color: #0000004a;
 }
 
 .vermelho {
-    background-color: rgb(233, 121, 121);
-}
+    background-color: rgba(255, 0, 0, 0.411);
+}   
 
 .rosa {
-    background-color: rgb(245, 187, 197);
+    background-color: rgba(255, 192, 203, 0.629);
 }
 
 /* ESTILIZAÇÃO CORPO */
