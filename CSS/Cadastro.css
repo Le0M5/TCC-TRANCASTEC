@@ -182,6 +182,10 @@ a {
 /* RESPONSIVIDADE */
 
 @media (max-width: 1000px) {
+    div.campo-de-entrada {
+        width: 80%;
+    }
+
     form.cadastrar {
         min-width: 0;
     }
@@ -198,7 +202,6 @@ a {
     form#cadastroForm.cadastrar {
         align-items: center;
         min-width: 0;
-
     }
 
 }

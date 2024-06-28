@@ -94,7 +94,6 @@ input::-webkit-outer-spin-button {
 
 .flex .div2 {
     display: flex;
-    gap: 10px;
 }
 
 label,
@@ -103,14 +102,21 @@ span {
     font-family: "Roboto", sans-serif;
 }
 
+.flex input::placeholder,
+.flex select::placeholder,
+.flex select,
+.flex input {
+    font-size: 1.1em;
+}
+
 .flex input,
 .flex select {
-    height: 40px;
+    height: 55px;
     background: white;
     border: 1px solid var(--cor-secundaria);
-    border-radius: 10px;
+    border-radius: 35px;
     margin: 1em 1em;
-    padding: 0 1em;
+    padding: 0 .5em;
     transition: .3s ease;
 }
 
@@ -125,15 +131,37 @@ span {
     text-transform: uppercase;
     position: absolute;
     top: 65%;
-    right: 41%;
+    right: 46%;
+}
+
+div.res,
+div.comple {
+    width: 215px;
+}
+
+div.res input,
+div.comple input {
+    width: 186px;
 }
 
 /* HOVER E FOCUS */
 
 input:focus,
 select:focus {
-    border: .15em solid #2c74b4;
-    outline: 1px double black;
+    outline: 0;
+}
+
+#Enviar {
+    width: 200px;
+    height: 60px;
+    border: none;
+    border-radius: 50px;
+    background-color: #00325f;
+    color: var(--cor-primaria);
+    font-weight: 600;
+    margin: 1em 0;
+    text-transform: uppercase;
+    cursor: pointer;
 }
 
 #Enviar:hover {
@@ -141,9 +169,6 @@ select:focus {
     background-color: var(--cor-secundaria);
     transform: scale(1.1);
     transition: linear .3s;
-    box-shadow: 5px 5px 15px var(--cor-secundaria);
-    color: black;
 }
 
 /* RESPONSIVIDADE */
-

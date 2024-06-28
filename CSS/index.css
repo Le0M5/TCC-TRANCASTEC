@@ -165,7 +165,7 @@ button.carousel-control-prev {
 }
 
 #carouselExampleAutoplaying {
-    transition: .3s ease-in-out;
+    transition: .2s ease-in-out;
 }
 
 .preto {
@@ -357,7 +357,8 @@ div.somos .imagem {
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
-    height: 110vh;
+    height: 120vh;
+    margin-top: 5em;
 }
 
 .texto2 p {
@@ -439,6 +440,69 @@ div.somos .imagem {
     transform: rotate(180deg);
 }
 
+img.slider {
+    margin: 3em 0;
+}
+
+/* AVALIACOES */
+
+div.avaliacoes {
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+    grid-template-rows: repeat(3, 630px);
+    justify-content: center;
+    height: 200vh;
+    gap: 5em;
+    margin-top: 3em;
+}
+
+.estrelas i {
+    color: yellow;
+}
+
+.estrelas {
+    margin: 1em 0;
+    transition: .2s ease;
+}
+
+.cardTexto {
+    margin: 1em;
+    text-align: center;
+    height: 100%;
+}
+
+.cardTexto p {
+    margin: 0;
+}
+
+.av {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 25px;
+    border: 2px solid;
+    padding: 1em;
+    transition: .3s ease-in-out;
+}
+
+.av:hover {
+    box-shadow: 0 0 10px #0037fc8f;
+    transform: scale(1.1);
+}
+
+.av .fotoCliente img {
+    border-radius: 50%;
+    border: 1px solid;
+    width: 100px;
+    height: 100px;
+    transition: .4s ease;
+}
+
+.av .fotoCliente img:hover,
+.estrelas:hover {
+    transform: scale(1.3);
+}
+
 /* SECTION RESPONSIVE */
 @media screen and (max-width: 850px) {
     .container {
@@ -452,19 +516,69 @@ div.somos .imagem {
 
 /* RODAPÉ */
 
-footer {
-    border-top: 1px solid black;
-    padding-top: .2em;
+.footer1 {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+
+}
+
+.footer1::before {
+    content: "";
+    position: absolute;
+    top: 522.8%;
+    left: 0;
+    display: block;
+    background-color: var(--cor-secundaria);
+    transform: skew(0deg, 1deg);
+    transform-origin: left;
+    width: 100%;
+    height: 150px;
+}
+
+.div1 {
+    z-index: 1;
+    display: flex;
+    justify-content: space-evenly;
+    width: 90vw;
+    margin-bottom: 2em;
+}
+
+.div2 a {
+    color: #0037fc;
+    font-weight: bold;
+}
+
+.div1 a:hover,
+.div2 a:hover {
+    transform: scale(1.1);
+    color: #0037fc;
+}
+
+.div2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.div2 p {
+    margin: 0;
+    width: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div2 a {
+    margin-left: .6em;
+    text-transform: uppercase;
 }
 
 div.footer {
-    height: 300px;
+    height: 200px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
 }
 
 footer h4 {
@@ -488,7 +602,7 @@ footer a {
 
 footer p,
 footer a {
-    font-size: 16px;
+    font-size: 20px;
     color: #f2f2f2;
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
@@ -504,22 +618,22 @@ footer a:hover {
 }
 
 .Doar {
-    font-size: 1.5em;
     border: 1px solid var(--cor-primaria);
     border-radius: 8px;
-    padding: .5em;
     text-transform: uppercase;
+    margin-top: 1em;
+    align-self: center;
 }
 
 .Doar:hover {
-    transform: scale(.8);
-    background-color: var(--cor-primaria);
-    color: #000;
+    background-color: #0037fc;
+    border-color: #0037fc;
 }
 
-.esse {
-    margin-top: 1em;
-    width: 450px;
+.Doar p {
+    margin: 0;
+    font-size: 1.2em;
+    padding: .3em;
 }
 
 .esse p {
@@ -528,9 +642,9 @@ footer a:hover {
 }
 
 .esse a i {
-    font-size: 50px;
+    font-size: 35px;
 }
 
 .essa {
-    margin-top: 1em;
+    margin-left: .4em;
 }
