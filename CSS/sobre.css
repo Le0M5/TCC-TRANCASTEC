@@ -356,6 +356,8 @@ footer {
 .div2 a {
     margin-left: .6em;
     text-transform: uppercase;
+    color: #0037fc;
+    font-weight: bold;
 }
 
 div.footer {
@@ -368,6 +370,7 @@ div.footer {
 
 footer h4 {
     justify-self: baseline;
+    font-weight: bold;
     font-size: 30px;
     text-align: center;
     color: #f2f2f2;
@@ -427,5 +430,9 @@ footer a:hover {
 }
 
 .esse a i {
-    font-size: 50px;
+    font-size: 35px;
+}
+
+.essa {
+    margin-left: .4em;
 }

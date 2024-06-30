@@ -325,7 +325,7 @@ div.somos .imagem {
 .texto2 a {
     border-radius: 15px;
     width: 300px;
-    height: 4.8em;
+    height: 4em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -340,7 +340,8 @@ div.somos .imagem {
 
 #VerMais:hover,
 .texto2 a:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
+    box-shadow: 0 0 10px #0037fc;
 }
 
 /* DIV ALGUMA COISA */
@@ -376,6 +377,7 @@ div.somos .imagem {
 
 .texto2 a {
     width: 200px;
+    padding: 3.2em;
 }
 
 .texto2 a p,
@@ -442,6 +444,17 @@ div.somos .imagem {
 
 img.slider {
     margin: 3em 0;
+}
+
+#produto h2 {
+    margin: 2em;
+}
+
+h2#NossoProd {
+    margin-top: 0;
+    margin-bottom: 4em;
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
 /* AVALIACOES */
@@ -525,7 +538,7 @@ div.avaliacoes {
 .footer1::before {
     content: "";
     position: absolute;
-    top: 522.8%;
+    top: 524.8%;
     left: 0;
     display: block;
     background-color: var(--cor-secundaria);
@@ -541,11 +554,6 @@ div.avaliacoes {
     justify-content: space-evenly;
     width: 90vw;
     margin-bottom: 2em;
-}
-
-.div2 a {
-    color: #0037fc;
-    font-weight: bold;
 }
 
 .div1 a:hover,
@@ -571,6 +579,8 @@ div.avaliacoes {
 .div2 a {
     margin-left: .6em;
     text-transform: uppercase;
+    color: #0037fc;
+    font-weight: bold;
 }
 
 div.footer {
@@ -583,6 +593,7 @@ div.footer {
 
 footer h4 {
     justify-self: baseline;
+    font-weight: bold;
     font-size: 30px;
     text-align: center;
     color: #f2f2f2;
