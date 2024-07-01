@@ -165,7 +165,14 @@ button.carousel-control-prev {
 /* ESPACO E SLOGAN */
 /* estilização da pate da frase e do teclado se movendo */
 
+.col-xs-12.col-sm-4.col-md-4 {
+    width: 100%;
+}
 
+.container2 {
+    display: flex;
+    flex-direction: column;
+}
 
 .beneficios .planeta {
     -webkit-animation: anamitionPlanetMobile 8s infinite linear;
@@ -252,11 +259,6 @@ button.carousel-control-prev {
         top: 50px;
     }
 }
-
-
-
-
-
 
 @-webkit-keyframes anamitionLua {
     0% {
@@ -674,8 +676,7 @@ button.carousel-control-prev {
 
 
 .beneficios {
-    position: relative;
-    padding: 70px 0;
+    /* padding: 70px 0; */
     background-color: #6c99ee;
     overflow: hidden;
 }
