@@ -125,7 +125,7 @@ header a {
 }
 
 .carousel {
-    height: 75vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     margin-top: 4.5em;
@@ -141,7 +141,7 @@ header a {
 }
 
 .carousel button {
-    left: 81%;
+    left: 90%;
     width: 200px;
     z-index: 0;
 }
@@ -234,7 +234,8 @@ footer {
 }
 
 .somos2 h2,
-.somos2 h3 {
+.somos2 h3,
+.avaliacao h2 {
     text-align: left;
     margin-left: 3em;
     font-size: 30px;
@@ -318,15 +319,16 @@ div.somos .imagem {
 /* BOTAO DO 1° CARROSSEL */
 
 #VerMais,
-.texto2 a {
+.texto2 a,
+.informacoes a {
     border-radius: 15px;
-    width: 300px;
-    height: 4em;
+    width: 200px;
+    height: 4.5em;
     display: flex;
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    margin-top: 4em;
+    margin-top: 3em;
     background-color: var(--cor-secundaria);
     color: var(--cor-primaria);
     transition: .4s ease-in-out;
@@ -335,27 +337,99 @@ div.somos .imagem {
 }
 
 #VerMais:hover,
-.texto2 a:hover {
+.texto2 a:hover,
+.informacoes a:hover {
     transform: scale(1.1);
-    box-shadow: 0 0 10px #0037fc;
+    box-shadow: 0 0 6px #0037fc;
 }
 
 /* DIV ALGUMA COISA */
 
 .algumaCoisa {
+    width: 100%;
     height: 120vh;
-    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+}
+
+.algumaCoisa .fundo img {
+    width: 100%;
+    height: 120vh;
+    opacity: .85;
+}
+
+.infos {
+    position: absolute;
+    top: 125%;
+    height: 720px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    background-color: #244de06b;
+}
+
+.flex {
+    display: flex;
+    width: 80vw;
+    height: 50vh;
+    justify-content: space-around;
+}
+
+.informacoes {
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.informacoes p {
+    margin: 1em;
+}
+
+.infos figure img {
+    width: 520px;
+    height: 450px;
+    border-radius: 25px;
+    box-shadow: 0 0 8px var(--cor-primaria);
+}
+
+.flex figure {
+    align-self: center;
+}
+
+.informacoes a {
+    align-self: center;
+    margin: 1em;
 }
 
 /* DIV CARROSSEL2 E PARTE DO PRODUTO */
 
 #produto {
     display: flex;
-    flex-direction: column-reverse;
     justify-content: center;
+}
+
+.fundo2 {
+    position: absolute;
+    height: 140vh;
+    z-index: -1;
+    opacity: .7;
+}
+
+.fundo2 img {
+    height: 140vh;
+}
+
+.resto {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
     align-items: center;
-    height: 120vh;
-    margin-top: 5em;
+    height: 140vh;
+    width: 45vw;
+    background-color: #45aceb44;
 }
 
 .texto2 p {
@@ -373,12 +447,12 @@ div.somos .imagem {
 
 .texto2 a {
     width: 200px;
-    padding: 3.2em;
+    padding: 1em;
 }
 
 .texto2 a p,
 #VerMais p {
-    font-size: 1.6em;
+    font-size: 1em;
 }
 
 .texto2 h2 {
@@ -387,7 +461,7 @@ div.somos .imagem {
 
 .container-slider {
     display: flex;
-    width: 800px;
+    width: 960px;
     min-height: 50vh;
     align-items: center;
     justify-content: center;
@@ -447,10 +521,13 @@ img.slider {
 }
 
 h2#NossoProd {
-    margin-top: 0;
-    margin-bottom: 4em;
+    margin: 2em 0;
     font-size: 1.5em;
     font-weight: bold;
+}
+
+.fundo2 {
+
 }
 
 /* AVALIACOES */
@@ -460,9 +537,14 @@ div.avaliacoes {
     grid-template-columns: repeat(3, 400px);
     grid-template-rows: repeat(3, 630px);
     justify-content: center;
-    height: 200vh;
+    height: 225vh;
     gap: 5em;
     margin-top: 3em;
+}
+
+.avaliacao h2 {
+    margin: 3em;
+    text-align: center;
 }
 
 .estrelas i {
@@ -526,7 +608,7 @@ div.avaliacoes {
 .footer1::before {
     content: "";
     position: absolute;
-    top: 524.8%;
+    top: 587%;
     left: 0;
     display: block;
     background-color: var(--cor-secundaria);
@@ -645,5 +727,5 @@ footer a:hover {
 }
 
 .essa {
-    margin-left: .4em;
+    align-self: center;
 }

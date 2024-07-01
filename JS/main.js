@@ -44,6 +44,8 @@ document.addEventListener("DOMContentLoaded", function () {
   carrossel.addEventListener('slid.bs.carousel', trocarFundo);
 });
 
+// CARROSSEL
+
 const slider = document.querySelectorAll('.slider');
 const btnPrev = document.getElementById('prev-button');
 const btnNext = document.getElementById('next-button');

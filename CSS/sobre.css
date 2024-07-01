@@ -315,7 +315,7 @@ footer {
 .footer1::before {
     content: "";
     position: absolute;
-    top: 154.3%;
+    top: 177%;
     left: 0;
     display: block;
     background-color: var(--cor-secundaria);
@@ -434,5 +434,5 @@ footer a:hover {
 }
 
 .essa {
-    margin-left: .4em;
+    align-self: center;
 }
