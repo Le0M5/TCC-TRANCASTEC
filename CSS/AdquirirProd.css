@@ -1,0 +1,354 @@
+/* ESTILIZAÇÃO GERAL */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --widthLogo: 105px;
+    --heightLogo: 45px;
+    --cor-primaria: #f2f2f2;
+    --cor-secundaria: #2c74b4;
+    --cor-fundo: #3f3f3f;
+    --margin-padrao: 1.6em;
+    --radius-botao: 10px;
+    --tamanho-fonte-padrao: 1.2rem;
+    --tamanho-fonte-padrao: 1.2rem;
+}
+
+/* ESTILIZAÇÃO CABEÇALHO */
+
+.cabecalho {
+    pointer-events: all;
+    z-index: 100;
+    top: 0;
+    display: flex;
+    position: fixed;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    opacity: 1;
+    height: 4.5em;
+    background-color: var(--cor-secundaria);
+}
+
+.logo img {
+    width: var(--widthLogo);
+    height: var(--heightLogo);
+}
+
+.menu a {
+    display: inline-block;
+    font-family: Verdana, Geneva, Tahoma;
+    font-size: 1em;
+    margin: var(--margin-padrao);
+    text-decoration: none;
+    color: var(--cor-primaria);
+    font-weight: bold;
+    transform: scale(1.1);
+}
+
+.menu a.active {
+    border-bottom: 2px solid var(--cor-secundaria);
+    /* Adiciona uma borda na parte inferior */
+}
+
+.menu a::after:focus {
+    width: 100%;
+}
+
+.login {
+    display: flex;
+}
+
+.logo a {
+    display: inline-flex;
+}
+
+header a:hover {
+    transform: scale(1.3);
+}
+
+header a {
+    transition: ease-in-out .3s;
+}
+
+.login a {
+    font-family: Verdana, Geneva, Tahoma;
+    font-size: 1em;
+    border-radius: var(--radius-botao);
+    padding: .1em .5em;
+    color: var(--cor-primaria);
+    border: 1.6px double;
+    text-decoration: none;
+    margin-right: 2em;
+    display: flex;
+    align-items: center;
+}
+
+/* FORM */
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    margin-top: 5em;
+    height: 100vh;
+    width: 60%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    align-self: center;
+}
+
+form {
+    border: 1px solid var(--cor-secundaria);
+    padding: 2em;
+    border-radius: 15px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+label {
+    margin: .4em;
+}
+
+input {
+    font-size: 20px;
+    width: 100%;
+    height: 50px;
+    background: var(--cor-primaria);
+    margin: .5em 0;
+    border: 1px solid var(--cor-secundaria);
+    border-radius: 50px;
+    padding: 1em;
+    text-align: center;
+}
+
+input:focus {
+    outline: none;
+}
+
+button {
+    padding: 0;
+    width: 120px;
+    height: 60px;
+    margin-top: 1em;
+    border: none;
+    border-radius: 20px;
+    background-color: #00325f;
+    color: var(--cor-primaria);
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase;
+    align-self: center;
+    transition: linear .3s;
+}
+
+button:hover {
+    background-color: var(--cor-secundaria);
+    transform: scale(1.1)
+}
+
+textarea {
+    font-size: 20px;
+    text-align: center;
+    padding: 1em;
+    resize: none;
+    border-radius: 25px;
+    border: 1px solid var(--cor-secundaria);
+}
+
+/* CARROSSEL */
+
+.container-slider {
+    display: flex;
+    width: 800px;
+    min-height: 50vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-images {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 700px;
+}
+
+.container-images img {
+    transition: .8s ease-in-out;
+    height: 650px;
+}
+
+.slider {
+    opacity: 0;
+    transition: opacity .2s;
+    position: absolute;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.on {
+    opacity: 1;
+}
+
+#prev-button,
+#next-button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#prev-button img,
+#next-button img {
+    width: 100%;
+    height: 100%;
+}
+
+#prev-button {
+    transform: rotate(180deg);
+}
+
+/* RODAPÉ */
+
+.footer1 {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cor-secundaria);
+}
+
+.footer1::before {
+    content: "";
+    position: absolute;
+    top: 93.9%;
+    left: 0;
+    display: block;
+    background-color: var(--cor-secundaria);
+    transform: skew(0deg, 1deg);
+    transform-origin: left;
+    width: 100%;
+    height: 150px;
+}
+
+.div1 {
+    z-index: 1;
+    display: flex;
+    justify-content: space-evenly;
+    width: 90vw;
+    margin-bottom: 2em;
+}
+
+.div1 a:hover,
+.div2 a:hover {
+    transform: scale(1.1);
+    color: #0037fc;
+}
+
+.div2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.div2 p {
+    margin: 0;
+    width: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div2 a {
+    margin-left: .6em;
+    text-transform: uppercase;
+    color: #0037fc;
+    font-weight: bold;
+}
+
+div.footer {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+footer h4 {
+    justify-self: baseline;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    color: #f2f2f2;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#contato p {
+    margin: 0;
+}
+
+footer a {
+    font-size: 30px;
+    display: flex;
+    text-align: left;
+    transition: .1s ease-in-out;
+}
+
+footer p,
+footer a {
+    font-size: 20px;
+    color: #f2f2f2;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer a:hover {
+    transform: scale(1.1);
+}
+
+.imagemfooter {
+    height: 60px;
+    width: 60px;
+}
+
+.Doar {
+    border: 1px solid var(--cor-primaria);
+    border-radius: 8px;
+    text-transform: uppercase;
+    margin-top: 1em;
+    align-self: center;
+}
+
+.Doar:hover {
+    background-color: #0037fc;
+    border-color: #0037fc;
+}
+
+.Doar p {
+    margin: 0;
+    font-size: 1.2em;
+    padding: .3em;
+}
+
+.esse p {
+    font-size: 20px;
+    text-align: center;
+}
+
+.esse a i {
+    font-size: 35px;
+}
+
+.essa {
+    margin-left: .4em;
+}

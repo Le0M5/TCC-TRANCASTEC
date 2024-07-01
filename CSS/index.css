@@ -88,10 +88,6 @@ header a {
     align-items: center;
 }
 
-#cartIcone {
-    font-size: 25px;
-}
-
 /* CARROSSEL */
 
 .texto p {
@@ -516,16 +512,8 @@ div.avaliacoes {
     transform: scale(1.3);
 }
 
-/* SECTION RESPONSIVE */
-@media screen and (max-width: 850px) {
-    .container {
-        display: block;
-    }
+/* RESPONSIVIDADE */
 
-    .container-items {
-        width: 100% !important;
-    }
-}
 
 /* RODAPÉ */
 
