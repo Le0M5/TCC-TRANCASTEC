@@ -97,7 +97,7 @@ body {
 }
 
 main {
-    height: 100vh;
+    height: 110vh;
     width: 85%;
     display: flex;
     flex-direction: row-reverse;
@@ -234,23 +234,29 @@ textarea {
 
 /* RODAPÉ */
 
+footer {
+    background-color: var(--cor-secundaria);
+    position: absolute;
+    top: 120%;
+    width: 100vw;
+}
+
 .footer1 {
     display: flex;
     flex-direction: column;
-    background-color: var(--cor-secundaria);
 }
 
 .footer1::before {
     content: "";
     position: absolute;
-    top: 86%;
+    top: -8em;
     left: 0;
     display: block;
     background-color: var(--cor-secundaria);
     transform: skew(0deg, 1deg);
     transform-origin: left;
     width: 100%;
-    height: 150px;
+    height: 130px;
 }
 
 .div1 {
@@ -263,8 +269,8 @@ textarea {
 
 .div1 a:hover,
 .div2 a:hover {
-    transform: scale(1.1);
     color: #0037fc;
+    transform: scale(1.1);
 }
 
 .div2 {
@@ -362,5 +368,5 @@ footer a:hover {
 }
 
 .essa {
-    margin-left: .4em;
+    align-self: center;
 }
