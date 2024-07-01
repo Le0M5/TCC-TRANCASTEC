@@ -169,6 +169,14 @@ button.carousel-control-prev {
     width: 100%;
 }
 
+.box-servico {
+    transition: .1s ease-in-out;
+}
+
+.box-servico:hover {
+    transform: scale(1.1);
+}
+
 .container2 {
     display: flex;
     flex-direction: column;
