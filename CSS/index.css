@@ -124,7 +124,8 @@ header a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: black;
+    font-weight: bold;
 }
 
 .carousel {
@@ -133,7 +134,6 @@ header a {
     justify-content: center;
     margin-top: 4.5em;
     gap: 14em;
-    background-color: #2c75b4b8;
 }
 
 .carrossel {
@@ -165,18 +165,6 @@ button.carousel-control-prev {
 
 #carouselExampleAutoplaying {
     transition: .2s ease-in-out;
-}
-
-.preto {
-    background-color: rgb(81, 81, 81);
-}
-
-.vermelho {
-    background-color: rgb(233, 121, 121);
-}
-
-.rosa {
-    background-color: rgb(245, 187, 197);
 }
 
 /* ESPACO E SLOGAN */
@@ -250,35 +238,45 @@ button.carousel-control-prev {
         left: 0%;
         top: 50px;
     }
+
     22% {
         top: -45px;
     }
+
     24% {
         top: -48px;
     }
+
     26% {
         top: -48px;
     }
+
     28% {
         top: -45px;
     }
+
     50% {
         left: 100%;
         transform: translateX(-100%);
         top: 50px;
     }
+
     72% {
         top: -45px;
     }
+
     74% {
         top: -48px;
     }
+
     76% {
         top: -48px;
     }
+
     78% {
         top: -45px;
     }
+
     100% {
         left: 0%;
         top: 50px;
@@ -290,35 +288,45 @@ button.carousel-control-prev {
         left: 0%;
         top: -50px;
     }
+
     22% {
         top: 42px;
     }
+
     24% {
         top: 46px;
     }
+
     26% {
         top: 46px;
     }
+
     28% {
         top: 42px;
     }
+
     50% {
         left: 100%;
         transform: translateX(-100%);
         top: -50px;
     }
+
     72% {
         top: 42px;
     }
+
     74% {
         top: 46px;
     }
+
     76% {
         top: 46px;
     }
+
     78% {
         top: 42px;
     }
+
     100% {
         left: 0%;
         top: -50px;
@@ -330,35 +338,45 @@ button.carousel-control-prev {
         left: 0%;
         top: -50px;
     }
+
     22% {
         top: 42px;
     }
+
     24% {
         top: 46px;
     }
+
     26% {
         top: 46px;
     }
+
     28% {
         top: 42px;
     }
+
     50% {
         left: 100%;
         transform: translateX(-100%);
         top: -50px;
     }
+
     72% {
         top: 42px;
     }
+
     74% {
         top: 46px;
     }
+
     76% {
         top: 46px;
     }
+
     78% {
         top: 42px;
     }
+
     100% {
         left: 0%;
         top: -50px;
@@ -370,35 +388,45 @@ button.carousel-control-prev {
         left: 0%;
         top: -50px;
     }
+
     22% {
         top: 42px;
     }
+
     24% {
         top: 46px;
     }
+
     26% {
         top: 46px;
     }
+
     28% {
         top: 42px;
     }
+
     50% {
         left: 100%;
         transform: translateX(-100%);
         top: -50px;
     }
+
     72% {
         top: 42px;
     }
+
     74% {
         top: 46px;
     }
+
     76% {
         top: 46px;
     }
+
     78% {
         top: 42px;
     }
+
     100% {
         left: 0%;
         top: -50px;
@@ -410,35 +438,45 @@ button.carousel-control-prev {
         left: 0%;
         top: -50px;
     }
+
     22% {
         top: 42px;
     }
+
     24% {
         top: 46px;
     }
+
     26% {
         top: 46px;
     }
+
     28% {
         top: 42px;
     }
+
     50% {
         left: 100%;
         transform: translateX(-100%);
         top: -50px;
     }
+
     72% {
         top: 42px;
     }
+
     74% {
         top: 46px;
     }
+
     76% {
         top: 46px;
     }
+
     78% {
         top: 42px;
     }
+
     100% {
         left: 0%;
         top: -50px;
@@ -450,47 +488,61 @@ button.carousel-control-prev {
         left: 0%;
         top: 30px;
     }
+
     22% {
         top: 6px;
     }
+
     22% {
         top: 4px;
     }
+
     24% {
         top: 2px;
     }
+
     26% {
         top: 2px;
     }
+
     28% {
         top: 4px;
     }
+
     30% {
         top: 6px;
     }
+
     50% {
         left: 100%;
         transform: translateX(-100%);
         top: 30px;
     }
+
     70% {
         top: 6px;
     }
+
     72% {
         top: 4px;
     }
+
     74% {
         top: 2px;
     }
+
     76% {
         top: 2px;
     }
+
     78% {
         top: 4px;
     }
+
     78% {
         top: 6px;
     }
+
     100% {
         left: 0%;
         top: 30px;
@@ -502,47 +554,61 @@ button.carousel-control-prev {
         left: 0%;
         top: 30px;
     }
+
     22% {
         top: 6px;
     }
+
     22% {
         top: 4px;
     }
+
     24% {
         top: 2px;
     }
+
     26% {
         top: 2px;
     }
+
     28% {
         top: 4px;
     }
+
     30% {
         top: 6px;
     }
+
     50% {
         left: 100%;
         transform: translateX(-100%);
         top: 30px;
     }
+
     70% {
         top: 6px;
     }
+
     72% {
         top: 4px;
     }
+
     74% {
         top: 2px;
     }
+
     76% {
         top: 2px;
     }
+
     78% {
         top: 4px;
     }
+
     78% {
         top: 6px;
     }
+
     100% {
         left: 0%;
         top: 30px;
@@ -554,47 +620,61 @@ button.carousel-control-prev {
         left: 0%;
         top: 30px;
     }
+
     22% {
         top: 6px;
     }
+
     22% {
         top: 4px;
     }
+
     24% {
         top: 2px;
     }
+
     26% {
         top: 2px;
     }
+
     28% {
         top: 4px;
     }
+
     30% {
         top: 6px;
     }
+
     50% {
         left: 100%;
         transform: translateX(-100%);
         top: 30px;
     }
+
     70% {
         top: 6px;
     }
+
     72% {
         top: 4px;
     }
+
     74% {
         top: 2px;
     }
+
     76% {
         top: 2px;
     }
+
     78% {
         top: 4px;
     }
+
     78% {
         top: 6px;
     }
+
     100% {
         left: 0%;
         top: 30px;
@@ -606,47 +686,61 @@ button.carousel-control-prev {
         left: 0%;
         top: 30px;
     }
+
     22% {
         top: 6px;
     }
+
     22% {
         top: 4px;
     }
+
     24% {
         top: 2px;
     }
+
     26% {
         top: 2px;
     }
+
     28% {
         top: 4px;
     }
+
     30% {
         top: 6px;
     }
+
     50% {
         left: 100%;
         transform: translateX(-100%);
         top: 30px;
     }
+
     70% {
         top: 6px;
     }
+
     72% {
         top: 4px;
     }
+
     74% {
         top: 2px;
     }
+
     76% {
         top: 2px;
     }
+
     78% {
         top: 4px;
     }
+
     78% {
         top: 6px;
     }
+
     100% {
         left: 0%;
         top: 30px;
@@ -658,41 +752,53 @@ button.carousel-control-prev {
         left: 0%;
         top: -10px;
     }
+
     22% {
         top: -7px;
     }
+
     22% {
         top: -6px;
     }
+
     24% {
         top: -5px;
     }
+
     26% {
         top: -5px;
     }
+
     28% {
         top: -6px;
     }
+
     30% {
         top: -7px;
     }
+
     50% {
         left: 100%;
         transform: translateX(-100%);
         top: -10px;
     }
+
     72% {
         top: -4px;
     }
+
     74% {
         top: -6px;
     }
+
     76% {
         top: -6px;
     }
+
     78% {
         top: -4px;
     }
+
     100% {
         left: 0%;
         top: -10px;
@@ -760,7 +866,7 @@ button.carousel-control-prev {
 .beneficios .display-servicos p {
     font-family: Helvetica, Arial, sans-serif !important;
     text-align: center;
-    font-size: 15px;
+    font-size: 26px;
     font-weight: 700;
 }
 
@@ -814,7 +920,7 @@ button.carousel-control-prev {
 }
 
 .beneficios .display-servicos .boxes-servicos .box-servico p {
-    font-size: 13px;
+    font-size: 22px;
 }
 
 
@@ -1006,8 +1112,8 @@ div.somos .imagem {
 .texto2 a,
 .informacoes a {
     border-radius: 15px;
-    width: 200px;
-    height: 4.5em;
+    width: 170px;
+    height: 4em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1093,17 +1199,19 @@ div.somos .imagem {
 #produto {
     display: flex;
     justify-content: center;
+    height: 90vh;
 }
 
 .fundo2 {
+    margin-top: 1.1em;
     position: absolute;
-    height: 120vh;
+    height: 90vh;
     z-index: -1;
     opacity: .7;
 }
 
 .fundo2 img {
-    height: 140vh;
+    height: 90vh;
     width: 100vw;
 }
 
@@ -1112,11 +1220,11 @@ div.somos .imagem {
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
-    height: 140vh;
-    width: 55vw;
+    height: 90vh;
+    width: 60vw;
     background-color: #458aebb7;
-    padding: 10em 0;
     color: white;
+    margin-top: 1.1em;
 }
 
 .texto2 p {
@@ -1129,6 +1237,7 @@ div.somos .imagem {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 30vh;
 }
 
 .texto2 a {
@@ -1141,13 +1250,9 @@ div.somos .imagem {
     font-size: 1em;
 }
 
-.texto2 h2 {
-    margin-top: 2em;
-}
-
 .container-slider {
     display: flex;
-    width: 960px;
+    width: 800px;
     min-height: 50vh;
     align-items: center;
     justify-content: center;
@@ -1159,12 +1264,12 @@ div.somos .imagem {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 700px;
+    width: 600px;
 }
 
 .container-images img {
     transition: .8s ease-in-out;
-    height: 600px;
+    height: 450px;
 }
 
 .slider {
@@ -1199,11 +1304,11 @@ div.somos .imagem {
 }
 
 #produto h2 {
-    margin: 2em;
+    margin: 1em;
 }
 
 h2#NossoProd {
-    margin: 2em 0;
+    margin: 0;
     font-size: 1.5em;
     font-weight: bold;
 }
@@ -1213,9 +1318,9 @@ h2#NossoProd {
 div.avaliacoes {
     display: grid;
     grid-template-columns: repeat(3, 400px);
-    grid-template-rows: repeat(3, 630px);
+    grid-template-rows: repeat(2, 630px);
     justify-content: center;
-    height: 225vh;
+    height: 150vh;
     gap: 5em;
     margin-top: 3em;
 }
@@ -1264,10 +1369,8 @@ div.avaliacoes {
     border: 1px solid;
     width: 100px;
     height: 100px;
-    transition: .4s ease;
 }
 
-.av .fotoCliente img:hover,
 .estrelas:hover {
     transform: scale(1.3);
 }
@@ -1390,6 +1493,7 @@ footer a:hover {
 .esse p {
     font-size: 20px;
     text-align: center;
+    margin: 0;
 }
 
 .esse a i {

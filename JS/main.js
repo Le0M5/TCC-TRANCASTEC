@@ -20,21 +20,23 @@ document.addEventListener("DOMContentLoaded", function () {
   const trocarFundo = () => {
     // Obter a imagem ativa dentro do carrossel
     const imagemAtiva = carrossel.querySelector('.carousel-item.active img');
+    const textoCarrossel = document.querySelector('#textoCarousel')
 
-    // Obter a cor de fundo computada da imagem ativa
-    const corFundoImagem = window.getComputedStyle(imagemAtiva).backgroundColor;
-
-
-
-    if (corFundoImagem === 'rgb(81, 81, 81)') {
-      carrossel.style.backgroundColor = 'rgb(81, 81, 81)'
-    } else if (corFundoImagem === 'rgb(233, 121, 121)') {
-      carrossel.style.backgroundColor = 'rgb(233, 121, 121)'
-    } else {
-      carrossel.style.backgroundColor = 'rgb(245, 187, 197)'
+    // Determinar a cor de fundo com base na imagem ativa
+    let corFundo;
+    if (imagemAtiva.src.includes('piano1.png')) {
+      corFundo = '#f426265e'; // Vermelho
+      textoCarrossel.style.color = 'black'
+    } else if (imagemAtiva.src.includes('piano2.png')) {
+      corFundo = "rgba(0, 0, 0, 0.8)"; // Preto
+      textoCarrossel.style.color = 'white'
+    } else if (imagemAtiva.src.includes('piano3.png')) {
+      corFundo = '#F2C6C2'; // Rosa
+      textoCarrossel.style.color = 'black'
     }
 
-    // Aplicar a cor de fundo da imagem ativa à div do carrossel
+    // Alterar o fundo do carrossel
+    carrossel.style.backgroundColor = corFundo;
   };
 
   // Chamar a função para trocar o fundo ao carregar a página
@@ -43,6 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Adicionar um listener para trocar o fundo quando o slide do carrossel mudar
   carrossel.addEventListener('slid.bs.carousel', trocarFundo);
 });
+
 
 // CARROSSEL
 

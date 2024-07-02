@@ -167,6 +167,7 @@ header a {
     background-color: #0037fc93;
     color: white;
     font-weight: bold;
+    margin-bottom: 1em;
 }
 
 .imagem img,
@@ -199,6 +200,7 @@ header a {
 
 .visao {
     height: 65vh;
+    margin-top: .1em;
     padding: 0 10em;
     background-color: #0037fc93;
     display: flex;
@@ -308,7 +310,7 @@ header a {
 
 .fundoPreto {
     position: absolute;
-    top: 181.2%;
+    top: 182.74%;
     width: 100vw;
     height: 82vh;
     background-color: rgba(0, 0, 0, 0.454);
