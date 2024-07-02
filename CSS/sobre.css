@@ -169,7 +169,8 @@ header a {
     font-weight: bold;
 }
 
-.imagem img {
+.imagem img,
+.visao img {
     border-radius: 20px;
     height: 520px;
     width: 670px;
@@ -194,19 +195,52 @@ header a {
 }
 
 /* PARTE MVV */
+/* VISÃO */
 
-.mvv {
-    height: 340vh;
+.visao {
+    height: 65vh;
+    padding: 0 10em;
+    background-color: #0037fc93;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
 }
 
-/* VISÃO */
+.textoVisao {
+    height: 65%;
+    width: 35vw;
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: justify;
+    color: white;
+}
+
+.textoVisao p {
+    margin: 0;
+}
 
 /* VALORES */
 
 .face {
-    width: 400px;
+    width: 350px;
     height: 300px;
-    perspective: 700px;
+    perspective: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+.face img {
+    width: 115px;
+    height: 110px;
+}
+
+.face h3 {
+    margin: 0;
+    text-align: center;
+    font-size: 24px;
 }
 
 .front,
@@ -217,6 +251,10 @@ header a {
     padding: 10px;
     border-radius: 10px;
     transition: 1s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .front {
@@ -225,9 +263,16 @@ header a {
 }
 
 .back {
-    background: lightslategray;
+    background: #476df6;
     transform: rotateY(-180deg);
     backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.back h2 {
+    font-size: 18px;
+    text-align: center;
 }
 
 .face:hover .front {
@@ -240,9 +285,68 @@ header a {
     z-index: 1;
 }
 
+.valores {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: hsla(199, 94%, 33%, 0.478);
+    color: white;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 70vw;
+    height: 75vh;
+    row-gap: 80px;
+}
+
 /* MISSAO */
 
+.fundoPreto {
+    position: absolute;
+    top: 181.2%;
+    width: 100vw;
+    height: 82vh;
+    background-color: rgba(0, 0, 0, 0.454);
+}
 
+.missao {
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.missao .fundoMissao img {
+    z-index: -1;
+    height: 82vh;
+    width: 100vw;
+    opacity: .8;
+}
+
+.textoMissao {
+    position: absolute;
+    width: 900px;
+    height: 35%;
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    background-color: #000000d8;
+    padding: 2em;
+    border-radius: 25px;
+    color: white;
+}
+
+.textoMissao p {
+    margin: 0;
+}
 
 /* SECTION RESPONSIVE */
 
@@ -253,26 +357,12 @@ header a {
 footer {
     background-color: var(--cor-secundaria);
     position: absolute;
-    top: 550%;
     width: 100vw;
 }
 
 .footer1 {
     display: flex;
     flex-direction: column;
-}
-
-.footer1::before {
-    content: "";
-    position: absolute;
-    top: -8em;
-    left: 0;
-    display: block;
-    background-color: var(--cor-secundaria);
-    transform: skew(0deg, 1deg);
-    transform-origin: left;
-    width: 100%;
-    height: 130px;
 }
 
 .div1 {

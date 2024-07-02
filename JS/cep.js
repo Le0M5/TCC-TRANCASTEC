@@ -48,8 +48,6 @@ document.getElementById('CEP')
 function handleSubmit(event) {
     event.preventDefault(); // Previne o comportamento padrão do evento de envio
 
-    // Aqui você pode adicionar qualquer lógica de validação adicional, se necessário
-
     // Submete o formulário manualmente após a validação
     event.target.submit();
     window.location.href = '../index.html'

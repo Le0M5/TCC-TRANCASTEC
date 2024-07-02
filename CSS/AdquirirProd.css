@@ -237,26 +237,13 @@ textarea {
 footer {
     background-color: var(--cor-secundaria);
     position: absolute;
-    top: 120%;
     width: 100vw;
+    top: 110%;
 }
 
 .footer1 {
     display: flex;
     flex-direction: column;
-}
-
-.footer1::before {
-    content: "";
-    position: absolute;
-    top: -8em;
-    left: 0;
-    display: block;
-    background-color: var(--cor-secundaria);
-    transform: skew(0deg, 1deg);
-    transform-origin: left;
-    width: 100%;
-    height: 130px;
 }
 
 .div1 {
