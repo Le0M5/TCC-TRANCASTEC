@@ -15,22 +15,39 @@
     <link rel="stylesheet" href="./CSS/index.css">
 </head>
 
-<body>
-    <header id="inicio">
-        <div class="cabecalho">
+<body id="inicio">
+    <header>
+        <nav class="nav-bar">
             <div class="logo">
-                <a href="./index.html"><img src="./IMG/Logo.png" alt="Logo da Inclu+"></a>
+                <a href="../index.html"><img src="../IMG/Logo.png" alt="Logo da Inclu+"></a>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="./index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="./HTML/sobre.html" class="nav-link">História</a></li>
+                    <li class="nav-item"><a href="#informacoes" class="nav-link">Quem somos</a></li>
+                    <li class="nav-item"><a href="#NossoProd" class="nav-link">Produto</a></li>
+                    <li class="nav-item"><a href="#contato" class="nav-link">Contato</a></li>
+                </ul>
+            </div>
+            <div class="login-button">
+                <a href="./HTML/Login.html">Entrar</a>
             </div>
 
-            <nav class="menu">
-                <a href="./index.html">Home</a>
-                <a href="./HTML/sobre.html">História</a>
-                <a href="#informacoes">Quem somos</a>
-                <a href="#NossoProd">Produto</a>
-                <a href="#contato">Contato</a>
-            </nav>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="./IMG/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="./index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="./HTML/sobre.html" class="nav-link">História</a></li>
+                <li class="nav-item"><a href="#informacoes" class="nav-link">Quem somos</a></li>
+                <li class="nav-item"><a href="#NossoProd" class="nav-link">Produto</a></li>
+                <li class="nav-item"><a href="#contato" class="nav-link">Contato</a></li>
+            </ul>
 
-            <div class="login">
+            <div class="login-button">
                 <a href="./HTML/Login.html">Entrar</a>
             </div>
         </div>
@@ -193,12 +210,18 @@
         <h2>Avaliações dos Clientes</h2>
         <div class="avaliacoes">
             <div class="av">
-                <div class="fotoCliente">
-                    <figure><img src="./IMG/face-imagem-457829.jpg" alt="cliente"></figure>
-                </div>
-                <h4>Laura</h4>
-                <div class="estrelas"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                <div class="divisao">
+                    <div class="fotoCliente">
+                        <figure><img src="./IMG/face-imagem-457829.jpg" alt="cliente"></figure>
+                        <h4>Laura</h4>
+                    </div>
+                    <div class="estrelas">
+                        <div class="alinhar">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i>
+                        </div>
+                    </div>
                 </div>
                 <div class="cardTexto">
                     <p>Ver meu filho, com sua deficiência motora, se apaixonar pelo piano infantil adaptado foi uma das
@@ -208,12 +231,18 @@
                 </div>
             </div>
             <div class="av">
-                <div class="fotoCliente">
-                    <figure><img src="./IMG/face-imagem-622151.jpg" alt="cliente"></figure>
-                </div>
-                <h4>Sarah</h4>
-                <div class="estrelas"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                <div class="divisao">
+                    <div class="fotoCliente">
+                        <figure><img src="./IMG/face-imagem-622151.jpg" alt="cliente"></figure>
+                        <h4>Sarah</h4>
+                    </div>
+                    <div class="estrelas">
+                        <div class="alinhar">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i>
+                        </div>
+                    </div>
                 </div>
                 <div class="cardTexto">
                     <p>O piano infantil adaptado tornou-se parte essencial da vida do meu filho com autismo. As luzes
@@ -225,12 +254,19 @@
                 </div>
             </div>
             <div class="av">
-                <div class="fotoCliente">
-                    <figure><img src="./IMG/face-imagem127123.PNG" alt="cliente"></figure>
-                </div>
-                <h4>Ana</h4>
-                <div class="estrelas"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                <div class="divisao">
+                    <div class="fotoCliente">
+                        <figure><img src="./IMG/face-imagem127123.PNG" alt="cliente"></figure>
+                        <h4>Ana</h4>
+                    </div>
+
+                    <div class="estrelas">
+                        <div class="alinhar">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i>
+                        </div>
+                    </div>
                 </div>
                 <div class="cardTexto">
                     <p>Quando meu filho, com sua deficiência de linguagem, começou a tocar o piano infantil adaptado,
@@ -241,12 +277,19 @@
                 </div>
             </div>
             <div class="av">
-                <div class="fotoCliente">
-                    <figure><img src="./IMG/face-imagem-813365.jpg" alt="cliente"></figure>
-                </div>
-                <h4>Rodrigo</h4>
-                <div class="estrelas"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                <div class="divisao">
+                    <div class="fotoCliente">
+                        <figure><img src="./IMG/face-imagem-813365.jpg" alt="cliente"></figure>
+                        <h4>Rodrigo</h4>
+                    </div>
+
+                    <div class="estrelas">
+                        <div class="alinhar">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i>
+                        </div>
+                    </div>
                 </div>
                 <div class="cardTexto">
                     <p>O piano infantil adaptado não só despertou o interesse musical da minha filha com deficiência
@@ -258,12 +301,19 @@
                 </div>
             </div>
             <div class="av">
-                <div class="fotoCliente">
-                    <figure><img src="./IMG/face-imagem-861164.jpg" alt="cliente"></figure>
-                </div>
-                <h4>Camila</h4>
-                <div class="estrelas"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                <div class="divisao">
+                    <div class="fotoCliente">
+                        <figure><img src="./IMG/face-imagem-861164.jpg" alt="cliente"></figure>
+                        <h4>Camila</h4>
+                    </div>
+
+                    <div class="estrelas">
+                        <div class="alinhar">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i>
+                        </div>
+                    </div>
                 </div>
                 <div class="cardTexto">
                     <p>Meu filho, com sua deficiência de atenção, encontrou no piano infantil adaptado uma maneira única
@@ -275,12 +325,19 @@
                 </div>
             </div>
             <div class="av">
-                <div class="fotoCliente">
-                    <figure><img src="./IMG/face-imagem123815.PNG" alt="cliente"></figure>
-                </div>
-                <h4>João</h4>
-                <div class="estrelas"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                <div class="divisao">
+                    <div class="fotoCliente">
+                        <figure><img src="./IMG/face-imagem123815.PNG" alt="cliente"></figure>
+                        <h4>João</h4>
+                    </div>
+
+                    <div class="estrelas">
+                        <div class="alinhar">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i>
+                        </div>
+                    </div>
                 </div>
                 <div class="cardTexto">
                     <p>Investir no piano infantil adaptado foi uma das melhores decisões para meu filho com síndrome de
@@ -294,10 +351,38 @@
         </div>
     </div>
 
-    <div id="contato" class="mapa"><iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.915525175814!2d-46.7072076!3d-23.499551999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef855a8584cdf%3A0x22f2cccbb94261d8!2sAv.%20Gen.%20Edgar%20Fac%C3%B3%2C%20765%20-%20Vila%20Arcadia%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2002924-201!5e0!3m2!1spt-BR!2sbr!4v1719951528110!5m2!1spt-BR!2sbr"
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+    <div id="contato" class="mapa">
+        <div class="estilizar">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.915525175814!2d-46.7072076!3d-23.499551999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef855a8584cdf%3A0x22f2cccbb94261d8!2sAv.%20Gen.%20Edgar%20Fac%C3%B3%2C%20765%20-%20Vila%20Arcadia%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2002924-201!5e0!3m2!1spt-BR!2sbr!4v1719951528110!5m2!1spt-BR!2sbr"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            <div class="formCtt">
+                <form action="https://formspree.io/f/mwpekbgp" method="POST" class="form">
+                    <div class="div1Form">
+                        <label for="name">Nome:</label>
+                        <input placeholder="Seu nome" type="text" name="Nome" id="name">
+                    </div>
+                    <div class="div2Form">
+                        <div class="email">
+                            <label for="email">E-mail:</label>
+                            <input placeholder="Seu e-mail" required type="email" name="E-mail" id="email">
+                        </div>
+                        <div class="telefone">
+                            <label for="tel">Telefone:</label>
+                            <input placeholder="Seu telefone" type="number" name="Telefone" id="tel">
+                        </div>
+                    </div>
+                    <div class="div3Form">
+                        <label for="message">Deixe sua dúvida abaixo:</label>
+                        <textarea placeholder="Sua dúvida" required name="message" id="message"></textarea>
+                        <button type="submit">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 
     <footer>
         <div class="footer1">
@@ -324,11 +409,16 @@
 
                 <div class="footer esse">
                     <h4>Contato</h4>
-                    <p><i class="bi bi-geo-alt-fill"></i> Av. Gen. Edgar Facó, 765 - Vila Arcadia, São Paulo - SP,
+                    <p><i class="bi bi-geo-alt"></i> Av. Gen. Edgar Facó, 765 - Vila Arcadia, São Paulo - SP,
                         02924-201.
                     </p>
-                    <p><i class="bi bi-envelope-fill"></i> inclu@outlook.com</p>
-                    <a id="Insta" href="https://www.instagram.com/_inclu/"><i class="bi bi-instagram"></i></a>
+                    <p><i class="bi bi-envelope"></i> inclu@outlook.com</p>
+                    <div class="insta">
+                        <a id="Insta" href="https://www.instagram.com/_inclu/">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <p>_inclu</p>
+                    </div>
                 </div>
 
                 <div class="footer">
