@@ -77,14 +77,26 @@ input::-webkit-outer-spin-button {
 .flex {
     display: flex;
     flex-flow: row wrap;
-    margin-bottom: 10em;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
 }
 
 .parte1,
-.parte2 {
-    width: 440px;
+.parte2,
+.parte3 {
+    width: 50%;
+    height: 350px;
     display: flex;
     flex-direction: column;
+}
+
+.parte3 {
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    height: 15%;
 }
 
 .parte1,
@@ -94,6 +106,7 @@ input::-webkit-outer-spin-button {
 
 .flex .div2 {
     display: flex;
+    justify-content: space-between;
 }
 
 label,
@@ -109,9 +122,9 @@ span {
     font-size: 1.1em;
 }
 
-.flex input,
-.flex select {
-    height: 55px;
+input,
+select {
+    height: 50px;
     background: white;
     border: 1px solid var(--cor-secundaria);
     border-radius: 35px;
@@ -121,17 +134,14 @@ span {
 }
 
 .flex input[type=submit] {
-    height: 50px;
+    height: 65px;
     margin-top: 3em;
-    width: 300px;
+    width: 200px;
     background-color: var(--cor-secundaria);
     font-size: 20px;
     color: white;
     font-weight: bold;
     text-transform: uppercase;
-    position: absolute;
-    top: 65%;
-    right: 46%;
 }
 
 div.res,
@@ -144,6 +154,12 @@ div.comple input {
     width: 186px;
 }
 
+.parte1 input,
+.parte1 select,
+.parte2 input {
+    margin: .5em;
+}
+
 /* HOVER E FOCUS */
 
 input:focus,
@@ -152,8 +168,6 @@ select:focus {
 }
 
 #Enviar {
-    width: 200px;
-    height: 60px;
     border: none;
     border-radius: 50px;
     background-color: #00325f;
@@ -172,3 +186,117 @@ select:focus {
 }
 
 /* RESPONSIVIDADE */
+
+@media screen and (max-width: 1893px) {
+    .container {
+        width: 40%;
+        height: 100vh;
+    }
+
+    #Enviar {
+        top: 90%;
+    }
+
+    .flex {
+        margin: 0;
+    }
+
+    form {
+        width: 130%;
+    }
+
+    input,
+    select {
+        width: 80%;
+    }
+
+    .parte1,
+    .parte2 {
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .div2 {
+        width: 90%;
+    }
+
+    .flex .div2 {
+        justify-content: space-around;
+    }
+
+    div.res,
+    div.comple {
+        width: 40%;
+    }
+
+    div.res input,
+    div.comple input {
+        width: 100%;
+        margin: 1em 0;
+    }
+}
+
+@media screen and (max-width: 1338px) {
+
+    body {
+        height: 100%;
+    }
+
+    .container {
+        height: 100vh;
+        width: 100%;
+    }
+
+    .flex {
+        flex-direction: column;
+    }
+
+    form {
+        position: relative;
+        height: 100vh;
+    }
+
+    .div2 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    div.res,
+    div.comple {
+        width: 100%;
+    }
+
+    form input,
+    form select {
+        width: 100%;
+        margin: .1em;
+    }
+
+    .parte1 input,
+    .parte1 select,
+    .parte2 input {
+        margin: 0;
+    }
+
+    .parte1,
+    .parte2,
+    .parte3 {
+        width: 100%;
+        height: 40%;
+    }
+
+    .parte2 {
+        height: 50%;
+    }
+
+    .parte3 {
+        height: 10vh;
+    }
+
+    #Enviar {
+        margin: 0;
+    }
+}
