@@ -15,22 +15,39 @@
     <link rel="stylesheet" href="../CSS/AdquirirProd.css">
 </head>
 
-<body>
-    <header id="inicio">
-        <div class="cabecalho">
+<body id="inicio">
+    <header>
+        <nav class="nav-bar">
             <div class="logo">
                 <a href="../index.html"><img src="../IMG/Logo.png" alt="Logo da Inclu+"></a>
             </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="./sobre.html#História" class="nav-link">História</a></li>
+                    <li class="nav-item"><a href="../index.html#informacoes" class="nav-link">Quem somos</a></li>
+                    <li class="nav-item"><a href="../index.html#produto" class="nav-link">Produto</a></li>
+                    <li class="nav-item"><a href="../index.html#contato" class="nav-link">Contato</a></li>
+                </ul>
+            </div>
+            <div class="login-button">
+                <a href="../HTML/Login.html">Entrar</a>
+            </div>
 
-            <nav class="menu">
-                <a href="../index.html">Home</a>
-                <a href="./sobre.html">História</a>
-                <a href="./sobre.html">Quem somos</a>
-                <a href="../index.html">Produto</a>
-                <a href="#contato">Contato</a>
-            </nav>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="../IMG/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="./sobre.html#História" class="nav-link">História</a></li>
+                <li class="nav-item"><a href="../index.html#informacoes" class="nav-link">Quem somos</a></li>
+                <li class="nav-item"><a href="../index.html#produto" class="nav-link">Produto</a></li>
+                <li class="nav-item"><a href="../index.html#contato" class="nav-link">Contato</a></li>
+            </ul>
 
-            <div class="login">
+            <div class="login-button">
                 <a href="../HTML/Login.html">Entrar</a>
             </div>
         </div>
@@ -110,6 +127,7 @@
     </footer>
 
     <script src="../JS/AdquirirProd.js"></script>
+    <script src="../JS/main.js"></script>
 </body>
 
 </html>
