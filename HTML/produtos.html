@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="../CSS/produtos.css">
     
 </head>
-<body id="inicio">
+<body>
     <header>
         <nav class="nav-bar">
             <div class="logo">
@@ -42,7 +42,7 @@
                 <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
                 <li class="nav-item"><a href="#História" class="nav-link">História</a></li>
                 <li class="nav-item"><a href="#somos?" class="nav-link">Quem somos</a></li>
-                <li class="nav-item"><a href="../index.html#produto" class="nav-link">Produto</a></li>
+                <li class="nav-item"><a href="./produtos.html" class="nav-link">Produto</a></li>
                 <li class="nav-item"><a href="../index.html#contato" class="nav-link">Contato</a></li>
             </ul>
 
@@ -52,44 +52,49 @@
         </div>
     </header>
 
-    
-        <div class="wrap">
-            <h1>Nosso <span>Produto</span> </h1>
-        
+    <div class="wrap">
+        <h1>Nosso <span>Produto</span></h1>
+      </div>
+
+      <div class="container-slider">
+        <button id="prev-button"><img src="../IMG/arrow.png" alt="prev-button"></button>
+        <div class="container-images">
+            <img src="../IMG/piano1.png" alt="piano infantil" class="slider on">
+            <img src="../IMG/piano2.png" alt="piano infantil" class="slider">
+            <img src="../IMG/piano3.png" alt="piano infantil" class="slider">
         </div>
-        
-        <div class="modal">
-            <input id="modal__trigger" type="checkbox" />
-            <img src="meninha-com-piano.png" alt="" class="imagem-piano">
-            <label for="modal__trigger">Saiba mais</label>
-            <div class="modal__overlay" role="dialog" aria-labelledby="modal__title" aria-describedby="modal_desc">
-                <div class="modal__wrap">
-                    <br><br><br><br><br><br><br><br><br> <br><br><br><br><br> <br><br><br><br><br><br><br><br><br><br>
-                    <label for="modal__trigger">&#10006;</label>
-                    <img src="../IMG/menino-teclado.png" alt="">
-                    <h2 id="modal__title">Toque colorido</h2>
-                    
-                    <p id="modal__desc">Nosso teclado  é especialmente projetado para atender as necessidades de crianças com deficiência auditiva, oferecendo uma experiência musical rica e acessível.</p>
-            
-                    <h2>Características Principais:</h2>
-                    <ul>
-                        <li><strong>Vibração:</strong> O teclado vem equipado com um sistema de vibração que permite às crianças sentir as notas musicais.</li>
-                        <li><strong>Design Ergonômico:</strong> O teclado é desenhado com bordas suaves e materiais seguros para garantir a segurança e o conforto das crianças.</li>
-                        <li><strong>Modo Interativo:</strong> O teclado inclui modos interativos que guiam as crianças em atividades musicais, incentivando a aprendizagem e a exploração. As atividades são projetadas para serem acessíveis e estimulantes, ajudando no desenvolvimento de habilidades motoras e coordenação.</li>
-                        <li><strong>Conectividade:</strong> Equipado com opções de conectividade, o teclado pode ser conectado a aplicativos móveis e outros dispositivos inteligentes, ampliando as possibilidades de aprendizado e diversão.</li>
-                        <li><strong>Sustentabilidade:</strong> Fabricado com materiais ecológicos e sustentáveis, o teclado reflete nosso compromisso com o meio ambiente e a criação de produtos que respeitam a natureza.</li>
-                    </ul>
-            
-                    <a href="../HTML/AdquirirProd.html">Quero adquirir</a>
-                </div>
-            </div>
+        <button id="next-button"><img src="../IMG/arrow.png" alt="next-button"></button>
+    </div>
+      
+      <button id="openModalBtn" class="adquirir-link">Saber mais</button>
+      
+      <!-- Modal -->
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <img src="../IMG/menino-teclado.png" alt="">
+          <h2>Toque colorido</h2>
+          <p>Nosso teclado é especialmente projetado para atender às necessidades de crianças com deficiência auditiva, oferecendo uma experiência musical rica e acessível.</p>
+          <h2>Características Principais:</h2>
+          <ul>
+            <li><strong>Vibração:</strong> O teclado vem equipado com um sistema de vibração que permite às crianças sentir as notas musicais.</li>
+            <li><strong>Design Ergonômico:</strong> O teclado é desenhado com bordas suaves e materiais seguros para garantir a segurança e o conforto das crianças.</li>
+            <li><strong>Modo Interativo:</strong> O teclado inclui modos interativos que guiam as crianças em atividades musicais, incentivando a aprendizagem e a exploração. As atividades são projetadas para serem acessíveis e estimulantes, ajudando no desenvolvimento de habilidades motoras e coordenação.</li>
+            <li><strong>Conectividade:</strong> Equipado com opções de conectividade, o teclado pode ser conectado a aplicativos móveis e outros dispositivos inteligentes, ampliando as possibilidades de aprendizado e diversão.</li>
+            <li><strong>Sustentabilidade:</strong> Fabricado com materiais ecológicos e sustentáveis, o teclado reflete nosso compromisso com o meio ambiente e a criação de produtos que respeitam a natureza.</li>
+          </ul>
+          <a href="../HTML/AdquirirProd.html" class="adquirir-link">Quero adquirir</a>
         </div>
-                
-            </div>
+      </div>
+      
+      
+      
+        
+            
             
     
     <div class="avaliacao">
-        <h2>Avaliações dos Clientes</h2>
+        <h2><span>Avaliações</span> dos Clientes</h2>
         <div class="avaliacoes">
             <div class="av">
                 <div class="divisao">
@@ -287,6 +292,7 @@
             </div>
         </div>
     </footer>
+    <script src="../JS/AdquirirProd.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
@@ -305,5 +311,20 @@
         new window.VLibras.Widget('https://vlibras.gov.br/app');
       </script>
       <script src="https://cdn.userway.org/widget.js" data-account="lDNOgbcrEH"></script>
+      <script src="prod.js"></script>
+      <!--chatai-->
+      <script>
+        window.GPTTConfig = {
+            uuid: "f7d626b9bde9489b96cb5447dec123ee"
+        }
+    </script>
+    <script
+        src="https://app.gpt-trainer.com/widget-asset.min.js"
+        defer>
+    </script>
+    
+
+    <!--fim do chatai-->
+    
 </body>
 </html>

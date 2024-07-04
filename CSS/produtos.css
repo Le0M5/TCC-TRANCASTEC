@@ -1,11 +1,28 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:300,400,900);
+@import url("https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap");
 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Baloo Bhai";
+}
 
+:root {
+  --widthLogo: 105px;
+  --heightLogo: 45px;
+  --cor-primaria: #f2f2f2;
+  --cor-secundaria: #2c74b4;
+  --cor-fundo: #3f3f3f;
+  --margin-padrao: 1.6em;
+  --radius-botao: 10px;
+  --tamanho-fonte-padrao: 1.2rem;
+  --tamanho-fonte-padrao: 1.2rem;
+}
 
 body {
   background: white;
   color: black-light; 
-  font-family: lato;
+  font-family: "lato";
   font-weight: thin;
   text-shadow: 1px 1px 1px #fff;
   text-align: center;
@@ -169,7 +186,6 @@ header {
 
 .menu a.active {
   border-bottom: 2px solid var(--cor-secundaria);
-  /* Adiciona uma borda na parte inferior */
 }
 
 .menu a::after:focus {
@@ -193,12 +209,12 @@ header a {
   transition: ease-in-out .3s;
 }
 
-ul {
+.modal ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
- ul li {
+ .modal ul li {
   
   color: #000000;
   margin-bottom: 10px;
@@ -241,135 +257,194 @@ ul {
     }
 }
 
-.modal h1 { 
+/* Estilos para o cabeçalho */
+/* Estilo para o modal */
+.wrap h1 {
   color: black;
-  font-family: "Audiowide", cursive;
   font-weight: bold;
-  margin: 0.5em 0 2.5em;
-  span {
-      color:#2abdf7;
-  }
+   
 }
-
+.wrap  span {
+  color: #2c74b4;
+}
 .wrap {
   padding: 1em;
+  margin-top: 150px;
   text-align: center;
-  @media (min-width: 700px) { padding: 1em 2em; }
+  @media (min-width: 700px) {
+    padding: 1em 2em;
+  }
 }
-
 .modal {
-  background: #fff;
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
-  display: inline-block;
+  display: none; /* Inicia oculto por padrão */
+  position: fixed; /* Fica fixo na tela */
+  z-index: 1; /* Coloca na frente de outros elementos */
+  left: 0;
+  top: 0;
+  text-align: center;
+  width: 100%; /* Largura total */
+  height: 100%; /* Altura total */
+  background-color: #fff; /* Cor de fundo semi-transparente */
+  overflow: auto; 
   padding: 1em;
+  /* Habilita rolagem quando necessário */
 }
-@media (min-width: 43.75em) {
-  .modal {
-    padding: 1.5em;
-  }
+.modal-content img {
+  height: 166px; /* Altura da imagem */
+  width: 200px; /* Largura da imagem */
+  display: block; /* Para garantir que a margem automática funcione */
+  margin: 0 auto; /* Centraliza horizontalmente */
+}
+/* Conteúdo do modal */
+.modal-content {
+  background-color: #fefefe;
+  border: 1px solid #ffffff;
+  width: 100%;
+  max-width: 900px;
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 600;
+  overflow-y: auto;
+  max-height: 100%; /* Altura máxima do modal */
+  padding: 20px; /* Espaçamento interno */
+  box-sizing: border-box; /* Inclui padding e border na largura total */
 }
 
-.imagem-piano {
-  height: 360px;
-}
-@media (max-width: 480px) {
-  .imagem-piano {
-    height: 166px;
-    width: 200px;
-  }
-}
-.modal > label {
-  background: #2abdf7;
-  border: 1px solid #2abdf7;
-  border-radius: 20em;
-  color: #000000;
-  cursor: pointer;
-  display: block;
-  font-weight: bold;
-  padding: 0.75em 1.5em;
-  text-shadow: 1px 1px 1px #fff;
-  transition: all 0.55s;
-}
-.modal > label:hover {
-  transform: scale(0.97);
-}
-.modal__overlay {
-  background: #ffffff;
-  bottom: 0;
-  left: 0;
-  position: fixed;
-  right: 0;
-  text-align: center;
-  text-shadow: none;
-  top: 0;
-  z-index: 600;
-  overflow-y: auto; 
-}
-.modal__wrap {
-  padding: 1em 0;
-  position: relative;
-  margin: 0 auto;
-  max-width: 500px;
-  width: 90%;
-  background: #fff;
-}
-@media (min-width: 50em) {
-  .modal__wrap {
-    padding: 1.75em;
-  }
-}
-@media (min-height: 37.5em) {
-  .modal__wrap {
-    left: 50%;
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%, -50%); 
-  }
-}
-.modal__wrap label {
-  background: #2abdf7;
-  border-radius: 50%;
-  color: #eee7e7;
-  cursor: pointer;
+/* botão de adquirir */
+
+.adquirir-link {
   display: inline-block;
-  height: 1.5em;
-  line-height: 1.5;
-  position: absolute;
-  right: .9em;
- 
-  width: 1.5em;
-}
-.modal__wrap h2 {
-  color: #2abdf7;
-  margin-bottom: 1em;
+  padding: 8px 16px; /* Reduzido o padding para torná-lo mais compacto */
+  background-color: #2c74b4;
+  color: #fff;
+  text-decoration: none;
   text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 50px; /* Valor alto para arredondar bastante, ajuste conforme necessário */
+  transition: background-color 0.3s ease;
 }
-.modal__wrap p {
+
+.adquirir-link:hover {
+  background-color: #0037fc;
+}
+
+/* Botão de fechar (X) */
+.close {
+  color: #121313;
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 40px; /* Tamanho do botão */
+  height: 40px; /* Tamanho do botão */
+  border-radius: 50%; /* Bordas circulares */
+  background-color: rgba(0, 55, 252, 0.8); /* Cor do fundo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease; /* Transição suave de cor de fundo */
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  cursor: pointer;
+  color: #0a0a0a;
+  text-decoration: none;
+  background-color: rgba(0, 55, 252, 0.8); /* Cor do fundo ao passar o mouse */
+}
+/* colorido e arrumando o titulo e o p do pop-out */
+.modal-content h2 {
+  color: #2c74b4;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 45px;
+}
+
+.modal-content p {
   color: #000000;
   text-align: justify;
-}
-.modal input:focus ~ label {
-  transform: scale(0.97);
+  font-size: 25px;
 }
 
-.modal input {
-  position: absolute;
-  top: -1000px;
+.modal-content li {
+  font-size: 25px;
+  text-align: justify;
+  color: #000;
 }
 
-.modal__overlay {
+
+/* CARROSSEL */
+
+.container-slider {
+  display: flex;
+  width: 800px;
+  min-height: 50vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
+    bottom: 50%;
+    top: 50%;
+    right: 50%;
+    left: 50%;
+}
+
+.container-images {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 700px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container-images img {
+  transition: .4s ease-in-out;
+  height: 650px;
+}
+
+.slider {
   opacity: 0;
-  transform: scale(0.5);
-  transition: all 0.75s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  z-index: -100;
+  transition: opacity .2s;
+  position: absolute;
+  width: 100%;
+  border-radius: 10px;
+  
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
-.modal input:checked ~ .modal__overlay {
+.on {
   opacity: 1;
-  transform: scale(1);
-  z-index: 800;
 }
 
+#prev-button,
+#next-button {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+#prev-button img,
+#next-button img {
+  width: 100%;
+  height: 100%;
+}
+
+#prev-button {
+  transform: rotate(180deg);
+}
 
 /* RODAPÉ */
 
@@ -509,6 +584,7 @@ a.Doar:hover {
 
 
 /* AVALIACOES */
+/* AVALIACOES */
 
 div.avaliacoes {
   display: grid;
@@ -586,4 +662,20 @@ div.avaliacoes {
   align-items: center;
   justify-content: space-around;
   width: 200px;
+}
+
+.avaliacao h2 {
+  color: #080808;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 45px;
+  margin-top: 90px;
+  
+} 
+.avaliacao span {
+  color: #2c74b4;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 45px;
+  margin-top: 90px;
 }
