@@ -1,23 +1,350 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:300,400,900);
+/* ESTILIZAÇÃO GERAL */
 
+@import url("https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap");
 
-
-body {
-  background: white;
-  color: black-light;
-  font-family: lato;
-  font-weight: thin;
-  text-shadow: 1px 1px 1px #fff;
-  text-align: center;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Baloo Bhai";
 }
 
-ul {
+:root {
+  --widthLogo: 105px;
+  --heightLogo: 45px;
+  --cor-primaria: #f2f2f2;
+  --cor-secundaria: #2c74b4;
+  --cor-fundo: #3f3f3f;
+  --margin-padrao: 1.6em;
+  --radius-botao: 10px;
+  --tamanho-fonte-padrao: 1.2rem;
+  --tamanho-fonte-padrao: 1.2rem;
+}
+
+/* HEADER MOBILE E PC*/
+
+header {
+  pointer-events: all;
+  z-index: 1;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  opacity: 1;
+  height: 4.5em;
+  background-color: var(--cor-secundaria)
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo h1 {
+  color: #fff;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-list ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.nav-list a {
+  font-family: Verdana, Geneva, Tahoma;
+  font-size: 1em;
+  margin: 0 1em;
+  text-decoration: none;
+  color: var(--cor-primaria);
+  font-weight: bold;
+  transition: .3s ease-in-out;
+}
+
+.nav-bar a:hover {
+  transform: scale(.95);
+}
+
+.login-button a {
+  font-family: Verdana, Geneva, Tahoma;
+  font-size: 1em;
+  border-radius: var(--radius-botao);
+  background-color: var(--cor-fundo);
+  padding: .4em .5em;
+  color: var(--cor-primaria);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.mobile-menu-icon {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+
+  .nav-bar {
+    width: 20%;
+  }
+
+  .nav-item {
+    display: none;
+  }
+
+  .login-button {
+    display: none;
+  }
+
+  .mobile-menu-icon {
+    display: block;
+  }
+
+  .mobile-menu-icon button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin: 0;
+    width: 50%;
+    margin-left: 7em;
+  }
+
+  .mobile-menu ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .mobile-menu .nav-item {
+    display: block;
+    padding-top: 1.2rem;
+  }
+
+  .mobile-menu .login-button {
+    display: flex;
+    justify-content: center;
+    margin: .5em;
+  }
+
+  .mobile-menu .login-button a {
+    padding: 1em;
+    font-weight: bold;
+  }
+
+  .mobile-menu .login-button button {
+    width: 100%;
+  }
+
+  .open {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #00325f;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .open a {
+    color: white;
+  }
+
+  .open ul,
+  .open li {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/* ESTILIZAÇÃO CABEÇALHO */
+
+.logo img {
+  width: var(--widthLogo);
+  height: var(--heightLogo);
+}
+
+.menu a.active {
+  border-bottom: 2px solid var(--cor-secundaria);
+  /* Adiciona uma borda na parte inferior */
+}
+
+.menu a::after:focus {
+  width: 100%;
+}
+
+.login {
+  display: flex;
+}
+
+.logo a {
+  display: inline-flex;
+}
+
+header a:hover {
+  transform: scale(1);
+  opacity: 0.8;
+}
+
+header a {
+  transition: ease-in-out .3s;
+}
+
+@media screen and (max-width: 768px) {
+
+  .nav-bar {
+    width: 100%;
+  }
+
+  .nav-item {
+    display: none;
+  }
+
+  .login-button {
+    display: none;
+  }
+
+  .mobile-menu-icon {
+    display: block;
+  }
+
+  .mobile-menu-icon button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin: 0;
+    width: 50%;
+    margin-left: 7em;
+  }
+
+  .mobile-menu ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .mobile-menu .nav-item {
+    display: block;
+    padding-top: 1.2rem;
+  }
+
+  .mobile-menu .login-button {
+    display: flex;
+    justify-content: center;
+    margin: .5em;
+  }
+
+  .mobile-menu .login-button a {
+    padding: 1em;
+    font-weight: bold;
+  }
+
+  .mobile-menu .login-button button {
+    width: 100%;
+  }
+
+  .open {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #00325f;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .open a {
+    color: white;
+  }
+
+  .open ul,
+  .open li {
+    margin: 0;
+    padding: 0;
+  }
+
+  .cardTexto p {
+    font-size: 14px !important;
+  }
+
+  .div2 p,
+  .div2 a {
+    text-align: center;
+    display: inline;
+    color: white !important;
+  }
+
+  .div2 a {
+    margin: 0;
+  }
+
+  .container-images img {
+    height: 400px !important;
+  }
+}
+
+
+/* div juntos */
+
+.juntos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 70vh;
+  margin-top: 2em;
+}
+
+/* ESTILIZAÇÃO CABEÇALHO */
+
+.logo img {
+  width: var(--widthLogo);
+  height: var(--heightLogo);
+}
+
+.menu a.active {
+  border-bottom: 2px solid var(--cor-secundaria);
+}
+
+.menu a::after:focus {
+  width: 100%;
+}
+
+.login {
+  display: flex;
+}
+
+.logo a {
+  display: inline-flex;
+}
+
+header a:hover {
+  transform: scale(1);
+  opacity: 0.8;
+}
+
+header a {
+  transition: ease-in-out .3s;
+}
+
+.modal ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-ul li {
+.modal ul li {
   color: #000000;
   margin-bottom: 1em;
 }
@@ -36,163 +363,234 @@ h2 {
   }
 }
 
-.modal h1 {
-  color: black;
-  font-family: "Audiowide", cursive;
-  font-weight: bold;
-  margin: 0.5em 0 2.5em;
-
-  span {
-    color: #2abdf7;
+@media (min-width: 1000px) {
+  h1 {
+    font-size: 4.5em;
   }
+}
+
+h2 {
+  font-size: 1em;
+  line-height: 1.2;
+  margin: 1.414em 0 0.5em;
+}
+
+/* Estilos para o cabeçalho */
+/* Estilo para o modal */
+.wrap h1 {
+  color: black;
+  font-weight: bold;
+
+}
+
+.wrap span {
+  color: #2c74b4;
 }
 
 .wrap {
   padding: 1em;
+  margin-top: 4em;
   text-align: center;
-
-  @media (min-width: 700px) {
-    padding: 1em 2em;
-  }
 }
 
 .modal {
-  background: #fff;
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1em;
-}
-
-@media (min-width: 43.75em) {
-  .modal {
-    padding: 1.5em;
-  }
-}
-
-.imagem-piano {
-  height: 360px;
-}
-
-@media (max-width: 480px) {
-  .imagem-piano {
-    height: 166px;
-    width: 200px;
-  }
-}
-
-.modal label {
-  background: #2abdf7;
-  border: 1px solid #2abdf7;
-  border-radius: 20em;
-  color: #000000;
-  cursor: pointer;
-  display: block;
-  font-weight: bold;
-  text-shadow: 1px 1px 1px #fff;
-  transition: all 0.55s;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#unico {
-  width: 40%;
-  height: 3em;
-}
-
-.modal>label:hover {
-  transform: scale(0.97);
-}
-
-.modal__overlay {
-  background: #ffffff;
-  bottom: 0;
-  left: 0;
+  display: none;
+  /* Inicia oculto por padrão */
   position: fixed;
-  right: 0;
-  text-align: center;
-  text-shadow: none;
+  /* Fica fixo na tela */
+  z-index: 1;
+  /* Coloca na frente de outros elementos */
+  left: 0;
   top: 0;
+  text-align: center;
+  width: 100%;
+  /* Largura total */
+  height: 100%;
+  /* Altura total */
+  background-color: #fff;
+  /* Cor de fundo semi-transparente */
+  overflow: auto;
+  padding: 1em;
+  /* Habilita rolagem quando necessário */
+}
+
+.modal-content img {
+  height: 166px;
+  /* Altura da imagem */
+  width: 200px;
+  /* Largura da imagem */
+  display: block;
+  /* Para garantir que a margem automática funcione */
+  margin: 0 auto;
+  /* Centraliza horizontalmente */
+}
+
+/* Conteúdo do modal */
+.modal-content {
+  background-color: #fefefe;
+  border: 1px solid #ffffff;
+  width: 100%;
+  max-width: 900px;
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   z-index: 600;
   overflow-y: auto;
+  max-height: 100%;
+  /* Altura máxima do modal */
+  padding: 20px;
+  /* Espaçamento interno */
+  box-sizing: border-box;
+  /* Inclui padding e border na largura total */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.modal__wrap {
+/* botão de adquirir */
+
+.adquirir-link {
+  display: inline-block;
+  padding: 8px 16px;
+  /* Reduzido o padding para torná-lo mais compacto */
+  background-color: #2c74b4;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 50px;
+  /* Valor alto para arredondar bastante, ajuste conforme necessário */
+  transition: background-color 0.3s ease;
+  width: 20%;
+}
+
+.adquirir-link:hover {
+  background-color: #0037fc;
+}
+
+/* Botão de fechar (X) */
+.close {
+  color: #121313;
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 40px;
+  /* Tamanho do botão */
+  height: 40px;
+  /* Tamanho do botão */
+  border-radius: 50%;
+  /* Bordas circulares */
+  background-color: rgba(0, 55, 252, 0.8);
+  /* Cor do fundo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease;
+  /* Transição suave de cor de fundo */
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  cursor: pointer;
+  color: #0a0a0a;
+  text-decoration: none;
+  background-color: rgba(0, 55, 252, 0.8);
+  /* Cor do fundo ao passar o mouse */
+}
+
+/* colorido e arrumando o titulo e o p do pop-out */
+.modal-content h2 {
+  color: #2c74b4;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 45px;
+}
+
+.modal-content p {
+  color: #000000;
+  text-align: justify;
+  font-size: 25px;
+}
+
+.modal-content li {
+  font-size: 25px;
+  text-align: justify;
+  color: #000;
+}
+
+
+/* CARROSSEL */
+
+.container-slider {
+  display: flex;
+  width: 800px;
+  min-height: 50vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  bottom: 50%;
+  top: 50%;
+  right: 50%;
+  left: 50%;
+}
+
+.container-images {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-  margin: 4em 0;
-  max-width: 500px;
-  width: 90%;
-  background: #fff;
+  width: 700px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-@media (min-width: 50em) {
-  .modal__wrap {
-    padding: 1.75em;
-  }
+.container-images img {
+  transition: .4s ease-in-out;
+  height: 650px;
 }
 
-@media (min-height: 37.5em) {
-  .modal__wrap {
-    left: 50%;
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%, -50%);
-  }
-}
-
-.modal__wrap label {
-  position: absolute;
-  top: 2%;
-  background: #2abdf7;
-  border-radius: 50%;
-  color: #eee7e7;
-  cursor: pointer;
-  height: 1.5em;
-  line-height: 1.5;
-  position: absolute;
-  right: .9em;
-
-  width: 1.5em;
-}
-
-.modal__wrap h2 {
-  color: #2abdf7;
-  margin-bottom: 1em;
-  text-transform: uppercase;
-}
-
-.modal__wrap p {
-  color: #000000;
-  text-align: justify;
-}
-
-.modal input:focus~label {
-  transform: scale(0.97);
-}
-
-.modal input {
-  position: absolute;
-  top: -1000px;
-}
-
-.modal__overlay {
+.slider {
   opacity: 0;
-  transform: scale(0.5);
-  transition: all 0.75s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  z-index: -100;
+  transition: opacity .2s;
+  position: absolute;
+  width: 100%;
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-.modal input:checked~.modal__overlay {
+.on {
   opacity: 1;
-  transform: scale(1);
-  z-index: 800;
 }
 
+#prev-button,
+#next-button {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+#prev-button img,
+#next-button img {
+  width: 100%;
+  height: 100%;
+}
+
+#prev-button {
+  transform: rotate(180deg);
+}
 
 /* RODAPÉ */
 
@@ -204,6 +602,8 @@ footer {
   justify-content: space-evenly;
   align-items: center;
   padding: 20px;
+  z-index: 0;
+  margin-top: 2em;
 }
 
 .footer1 {
@@ -333,6 +733,7 @@ a.Doar:hover {
 
 
 /* AVALIACOES */
+/* AVALIACOES */
 
 div.avaliacoes {
   display: grid;
@@ -412,18 +813,34 @@ div.avaliacoes {
   width: 200px;
 }
 
-.modal__wrap a {
-  border-radius: 15px;
-  height: 3em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #2abdf7;
-  text-decoration: none;
-  margin-top: 1.5em;
-  color: white;
-  transition: .4s ease-in-out;
-  text-transform: uppercase;
+.avaliacao h2 {
+  color: #080808;
   font-weight: bold;
-  padding: 1em;
+  text-transform: uppercase;
+  font-size: 45px;
+  margin-top: 90px;
+
+}
+
+.avaliacao span {
+  color: #2c74b4;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 45px;
+  margin-top: 90px;
+}
+
+/* OUTROS */
+
+figure {
+  margin: 0;
+}
+
+.nav-list ul {
+  padding: 0;
+  margin: 0;
+}
+
+.nav-bar li {
+  margin: 0;
 }

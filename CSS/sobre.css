@@ -236,6 +236,11 @@ header a {
     margin: .6em;
 }
 
+.texto p {
+    font-size: 1.2em;
+    font-weight: 100;
+}
+
 /* PARTE MVV */
 /* VISÃO */
 
@@ -359,6 +364,10 @@ header a {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.fundoMissao {
+    width: 100%;
 }
 
 .missao .fundoMissao img {
@@ -639,6 +648,7 @@ figure {
 
     .sloganEfundo {
         width: auto;
+        height: 60vh;
     }
 
     .slogan {
@@ -647,6 +657,7 @@ figure {
 
     .fundo img {
         width: 100%;
+        height: 60vh;
     }
 
     .imagem img,

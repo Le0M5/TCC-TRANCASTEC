@@ -56,12 +56,6 @@ header {
     justify-content: center;
 }
 
-.nav-list ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-}
-
 .nav-bar a {
     font-family: Verdana, Geneva, Tahoma;
     font-size: .9em;
@@ -102,7 +96,7 @@ header {
         width: 20%;
     }
 
-    .nav-item {
+    .nav-list a {
         display: none;
     }
 
@@ -246,7 +240,7 @@ header a {
 }
 
 .carousel {
-    height: 100vh;
+    height: 95vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -273,7 +267,7 @@ button.carousel-control-prev {
 }
 
 .carousel img {
-    height: 500px;
+    height: 600px;
 }
 
 .carousel-item {
@@ -1507,7 +1501,6 @@ div.avaliacoes {
 /* MAPA E CONTATO */
 
 .mapa {
-    margin-top: 2em;
     height: 80vh;
     background-color: #2c75b4bf;
     display: flex;
@@ -1775,16 +1768,27 @@ figure {
     margin: 0;
 }
 
+.div2 a,
+.div2 a:hover {
+    color: white;
+}
+
+
 /* RESPONSIVIDADE */
 
 @media screen and (max-width: 1880px) {
+
+    .userway_buttons_wrapper {
+        position: absolute;
+        top: 50% !important;
+        left: 10% !important;
+    }
 
     header {
         width: 100%;
     }
 
     .mobile-menu.open {
-        z-index: 1;
         min-height: 100%;
     }
 
@@ -1891,12 +1895,15 @@ figure {
         width: auto;
         height: auto;
         align-items: center;
-        height: 180vh;
+        justify-content: center;
+        height: 140vh !important;
     }
 
     .informacoes {
         width: auto;
+        height: 100vh !important;
         align-items: center;
+        justify-content: space-around;
     }
 
     .informacoes p {
@@ -1904,12 +1911,12 @@ figure {
     }
 
     .algumaCoisa {
-        height: 200vh;
+        height: 140vh !important;
         overflow: hidden;
     }
 
     .algumaCoisa .fundo img {
-        height: 200vh;
+        height: 140vh !important;
         width: 500%;
     }
 
@@ -1919,11 +1926,13 @@ figure {
     }
 
     .infos {
-        height: 200vh;
+        height: 140vh !important;
+        padding: 0 !important;
     }
 
     .carousel {
-        height: 200vh;
+        margin-top: 0;
+        height: 150vh !important;
         flex-direction: column-reverse;
         width: 100%;
     }
@@ -1944,5 +1953,27 @@ figure {
 
     .carousel-control-prev-icon {
         margin-right: 19em;
+    }
+
+    #suma {
+        display: none;
+    }
+
+    .div2 p,
+    .div2 a {
+        text-align: center;
+        display: inline;
+    }
+
+    .div2 a {
+        margin: 0;
+    }
+
+    .carousel img {
+        height: 400px;
+    }
+
+    .mobile-menu-icon button {
+        margin-left: 5em;
     }
 }

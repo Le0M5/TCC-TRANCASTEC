@@ -345,6 +345,8 @@ textarea {
     transform: rotate(180deg);
 }
 
+
+
 /* RODAPÉ */
 
 footer {
@@ -495,6 +497,10 @@ figure {
     margin: 0;
 }
 
+label {
+    color: black;
+}
+
 @media screen and (max-width: 1880px) {
 
     header,
@@ -503,7 +509,7 @@ figure {
     }
 
     header {
-        width: 90%;
+        width: 100%;
     }
 
     .mobile-menu.open {
@@ -520,13 +526,14 @@ figure {
     main {
         display: flex;
         flex-direction: column-reverse;
-        width: auto;
+        width: 100%;
         height: auto;
     }
 
     form {
-        width: 80%;
+        width: 95%;
         height: auto;
+        padding: 2em;
     }
 
     .container-slider {
@@ -571,6 +578,21 @@ figure {
     }
 
     body {
+        width: 100%;
+    }
+
+    .div2 p,
+    .div2 a {
+        text-align: center;
+        display: inline;
+        color: white;
+    }
+
+    .div2 a {
+        margin: 0;
+    }
+
+    .container-slider {
         width: 100%;
     }
 

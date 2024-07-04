@@ -1,0 +1,238 @@
+#CONTATO {
+    margin-top: 4.5em;
+    background-color: #2c75b4bf;
+    display: flex;
+    justify-content: center;
+    height: 4em;
+    align-items: center;
+}
+
+#CONTATO h1 {
+    font-size: 3.5em;
+    margin: 0;
+    margin-top: 2em;
+    color: white;
+}
+
+label {
+    color: white;
+}
+
+button {
+    border-radius: 25px;
+}
+
+.div3Form {
+    height: 35vh;
+    justify-content: space-around;
+}
+
+.nav-list a {
+    font-size: 1.2em;
+}
+
+@media screen and (max-width: 1880px) {
+
+    .userway_buttons_wrapper {
+        position: absolute;
+        top: 50% !important;
+        left: 10% !important;
+    }
+
+    .nav-bar {
+        width: 100%;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    .mobile-menu.open {
+        min-height: 100%;
+    }
+
+    footer {
+        z-index: 0;
+    }
+
+    div.footer {
+        align-items: center;
+    }
+
+    .div2 p {
+        display: block;
+    }
+
+    .div2 a {
+        margin-left: 6em;
+    }
+
+    .footer p {
+        text-align: center;
+    }
+
+    footer .div1 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    body {
+        width: 100%;
+    }
+
+    div p {
+        margin: 0;
+    }
+
+    div.avaliacoes {
+        grid-template-columns: auto;
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .estilizar {
+        flex-direction: column;
+        height: 120vh;
+        width: auto;
+        justify-content: space-around;
+    }
+
+    #produto {
+        height: 110vh;
+    }
+
+    .fundo2 {
+        height: 100%;
+    }
+
+    .fundo2 img {
+        height: 110vh;
+    }
+
+    .texto2 {
+        width: auto;
+    }
+
+    .resto {
+        width: 100%;
+        height: auto;
+    }
+
+    .container-slider {
+        width: 100%;
+    }
+
+    .container-images {
+        width: 100%;
+    }
+
+    .mapa {
+        height: 120vh;
+    }
+
+    .div2Form {
+        flex-direction: column;
+        height: auto;
+    }
+
+    iframe {
+        width: auto;
+        height: 35vh;
+    }
+
+    form {
+        width: auto;
+        justify-content: center;
+    }
+
+    .telefone {
+        width: auto;
+    }
+
+    .flex {
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        align-items: center;
+        height: 180vh;
+    }
+
+    .informacoes {
+        width: auto;
+        align-items: center;
+    }
+
+    .informacoes p {
+        text-align: justify;
+    }
+
+    .algumaCoisa {
+        height: 200vh;
+        overflow: hidden;
+    }
+
+    .algumaCoisa .fundo img {
+        height: 200vh;
+        width: 500%;
+    }
+
+    .infos figure img {
+        height: auto;
+        width: 100%;
+    }
+
+    .infos {
+        height: 200vh;
+    }
+
+    .carousel {
+        height: 200vh;
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+
+    .texto,
+    .carrossel {
+        width: auto;
+    }
+
+    .texto {
+        height: auto;
+    }
+
+    .carousel button {
+        left: auto;
+        width: auto;
+    }
+
+    .carousel-control-prev-icon {
+        margin-right: 19em;
+    }
+
+    #suma {
+        display: none;
+    }
+
+    .div2 p,
+    .div2 a {
+        text-align: center;
+        display: inline;
+    }
+
+    .div2 a {
+        margin: 0;
+    }
+
+    #openModalBtn,
+    .adquirir-link {
+        width: 50%;
+    }
+
+    .div3Form {
+        height: 40vh;
+    }
+
+    #CONTATO h1 {
+        margin-top: 1em;
+    }
+}
