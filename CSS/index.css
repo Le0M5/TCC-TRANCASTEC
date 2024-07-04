@@ -231,6 +231,7 @@ header a {
 
 .texto {
     width: 700px;
+    height: 40vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -241,12 +242,14 @@ header a {
 
 #textoCarousel {
     font-size: 1.5em;
+    text-align: center;
 }
 
 .carousel {
     height: 100vh;
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-top: 4.5em;
     gap: 14em;
 }
@@ -270,8 +273,7 @@ button.carousel-control-prev {
 }
 
 .carousel img {
-    height: 700px;
-    padding: auto;
+    height: 500px;
 }
 
 .carousel-item {
@@ -1023,7 +1025,7 @@ button.carousel-control-prev {
     margin-left: 10px;
     margin-bottom: 15px;
     border-radius: 50px;
-    padding: 50px 20px;
+    padding: 30px 20px;
     min-height: 200px;
     transition: 1s;
 }
@@ -1427,7 +1429,7 @@ h2#NossoProd {
 div.avaliacoes {
     display: grid;
     grid-template-columns: repeat(3, 570px);
-    grid-template-rows: repeat(2, 290px);
+    grid-template-rows: repeat(2, 250px);
     justify-content: center;
     gap: 3em;
     margin-top: 3em;
@@ -1727,6 +1729,7 @@ footer a:hover {
     margin-top: 1em;
     align-self: center;
     transition: ease-in-out .3s;
+    transform: scale(1.1);
 }
 
 .Doar p {
@@ -1776,9 +1779,8 @@ figure {
 
 @media screen and (max-width: 1880px) {
 
-    header,
-    nav.nav-bar {
-        justify-content: space-between;
+    header {
+        width: 100%;
     }
 
     .mobile-menu.open {
@@ -1816,12 +1818,13 @@ figure {
         width: 100%;
     }
 
-    div p  {
+    div p {
         margin: 0;
     }
 
     div.avaliacoes {
         grid-template-columns: auto;
+        grid-template-rows: repeat(3, 1fr);
     }
 
     .estilizar {
@@ -1830,6 +1833,36 @@ figure {
         width: auto;
         justify-content: space-around;
     }
+
+    #produto {
+        height: 110vh;
+    }
+
+    .fundo2 {
+        height: 100%;
+    }
+
+    .fundo2 img {
+        height: 110vh;
+    }
+
+    .texto2 {
+        width: auto;
+    }
+
+    .resto {
+        width: 100%;
+        height: auto;
+    }
+
+    .container-slider {
+        width: 100%;
+    }
+
+    .container-images {
+        width: 100%;
+    }
+
     .mapa {
         height: 120vh;
     }
@@ -1853,4 +1886,63 @@ figure {
         width: auto;
     }
 
+    .flex {
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        align-items: center;
+        height: 180vh;
+    }
+
+    .informacoes {
+        width: auto;
+        align-items: center;
+    }
+
+    .informacoes p {
+        text-align: justify;
+    }
+
+    .algumaCoisa {
+        height: 200vh;
+        overflow: hidden;
+    }
+
+    .algumaCoisa .fundo img {
+        height: 200vh;
+        width: 500%;
+    }
+
+    .infos figure img {
+        height: auto;
+        width: 100%;
+    }
+
+    .infos {
+        height: 200vh;
+    }
+
+    .carousel {
+        height: 200vh;
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+
+    .texto,
+    .carrossel {
+        width: auto;
+    }
+
+    .texto {
+        height: auto;
+    }
+
+    .carousel button {
+        left: auto;
+        width: auto;
+    }
+
+    .carousel-control-prev-icon {
+        margin-right: 19em;
+    }
 }
