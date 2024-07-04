@@ -1620,7 +1620,51 @@ textarea {
 
 /* RESPONSIVIDADE */
 
+@media screen and (max-width: 1880px) {
 
+    header,
+    nav.nav-bar {
+        width: 65%;
+        justify-content: space-between;
+    }
+
+    .mobile-menu.open {
+        z-index: 1;
+        width: 75%;
+        min-height: 100%;
+    }
+
+    footer {
+        z-index: 0;
+    }
+
+    div.footer {
+        align-items: center;
+    }
+
+    .div2 p {
+        display: block;
+    }
+
+    .div2 a {
+        margin-left: 6em;
+    }
+
+    .footer p {
+        text-align: center;
+    }
+
+    footer .div1 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    body {
+        width: 100%;
+    }
+
+}
 /* RODAPÉ */
 
 footer {
