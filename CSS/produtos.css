@@ -587,3 +587,17 @@ div.avaliacoes {
   justify-content: space-around;
   width: 200px;
 }
+
+.modal__wrap a {
+  border-radius: 15px;
+  height: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  margin-top: 1.5em;
+  color: var(--cor-fundo);
+  transition: .4s ease-in-out;
+  text-transform: uppercase;
+  font-weight: bold;
+}

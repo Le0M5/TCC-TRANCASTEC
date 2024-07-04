@@ -349,14 +349,16 @@ textarea {
 
 footer {
     background-color: var(--cor-secundaria);
-    position: absolute;
     width: 100vw;
-    top: 110%;
+    display: flex;
+    align-items: center;
+    padding: 20px;
 }
 
 .footer1 {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .div1 {
@@ -368,7 +370,9 @@ footer {
 }
 
 .div1 a:hover,
-.div2 a:hover {
+.div2 a:hover,
+footer i:hover {
+    cursor: pointer;
     color: #0037fc;
     transform: scale(1.1);
 }
@@ -398,7 +402,7 @@ div.footer {
     height: 200px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: flex-start;
 }
 
@@ -440,35 +444,39 @@ footer a:hover {
 }
 
 .Doar {
-    border: 1px solid var(--cor-primaria);
+    background-color: var(--cor-fundo);
     border-radius: 8px;
-    text-transform: uppercase;
     margin-top: 1em;
     align-self: center;
-}
-
-.Doar:hover {
-    background-color: #0037fc;
-    border-color: #0037fc;
+    transition: ease-in-out .3s;
 }
 
 .Doar p {
     margin: 0;
-    font-size: 1.2em;
+    font-size: 1em;
     padding: .3em;
 }
 
 .esse p {
     font-size: 20px;
     text-align: center;
-}
-
-.esse a i {
-    font-size: 35px;
+    margin: 0;
 }
 
 .essa {
     align-self: center;
+}
+
+.insta {
+    display: flex;
+    align-items: center;
+    width: 80px;
+    justify-content: space-between;
+}
+
+a.Doar:hover {
+    opacity: .8;
+    transform: scale(1);
 }
 
 /* OUTROS */
