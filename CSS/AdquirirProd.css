@@ -602,3 +602,12 @@ label {
     }
 
 }
+
+.div2 a,
+.div2 p {
+    color: white;
+}
+
+.div2 a:hover {
+    color: white;
+}
