@@ -501,6 +501,11 @@ label {
     color: black;
 }
 
+.div2 a,
+.div2 p {
+    color: white;
+}
+
 @media screen and (max-width: 1880px) {
 
     header,
